@@ -7,7 +7,6 @@
 	<property name="rmiregistry.port" value="1099"/>
 	<property name="rmiregistry.IP" value="127.0.0.1"/> 
 	<property name="server.Name1" value="Vodafone"/>
-	<property name="server.Name2" value="Movistar"/>
 	<property name="policy.file" location="security/java.policy"/>	
 
 	<path id="full.classpath">
