@@ -1,9 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- WARNING: Eclipse auto-generated file.
-              Any modifications will be overwritten.
-              To include a user specific buildfile here, simply create one in the same
-              directory with the processing instruction <?eclipse.ant.import?>
-              as the first entry and export the buildfile again. -->
 <project basedir="." default="help" name="SD3_DeustoAir_Server">
     <property environment="env"/>
 	
@@ -12,7 +7,6 @@
 	<property name="dist.dir" location="dist"/>
 	<property name="lib.dir" location="lib"/>
 	<property name="classpath" location="bin"/>
-	<property name="export.file" value="xxxx.jar"/>
 	<property name="server.port" value="1099"/> 
 	<property name="server.IP" value="127.0.0.1"/> 
 	<property name="server.Name" value="Vodafone"/>
@@ -33,12 +27,6 @@
     	<delete dir="${build.dir}"/>
     	<mkdir dir="${build.dir}"/>
     	<javac srcdir="${source.dir}" destdir="${build.dir}" classpath="${classpath}" deprecation="true" fork="true" classpathref="full.classpath" includeantruntime="no"/>
-    </target>
-              	
-    <target name="export" depends="build" description="Export the project into a .jar file">
-    	<delete dir="${dist.dir}"/>
-    	<mkdir dir="${dist.dir}"/>
-    	<jar destfile="${dist.dir}/${export.file}" basedir="${build.dir}" includes=""/>
     </target>
 	
 	<target name="server" depends="build" description="Runs Server program">
