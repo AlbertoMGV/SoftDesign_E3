@@ -8,14 +8,12 @@ public class PaymentDTO {
 	
 	private int id;
 	private long date;
-	private String paymentMethod;
 	private int paidReservationId;
 	
-	public PaymentDTO(int id, long date, String paymentMethod, int paidReservationId) {
+	public PaymentDTO(int id, long date, int paidReservationId) {
 		super();
 		this.id = id;
 		this.date = date;
-		this.paymentMethod = paymentMethod;
 		this.paidReservationId = paidReservationId;
 	}
 
@@ -36,13 +34,6 @@ public class PaymentDTO {
 		this.date = date;
 	}
 
-	public String getPaymentMethod() {
-		return paymentMethod;
-	}
-
-	public void setPaymentMethod(String paymentMethod) {
-		this.paymentMethod = paymentMethod;
-	}
 
 	public int getPaidReservationId() {
 		return paidReservationId;
