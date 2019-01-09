@@ -32,6 +32,8 @@ public class ReservationWindow {
 	private JTextField textField_2;
 	private JLabel lblSeats;
 	private JTextField textField_3;
+	private JCheckBox chckbxPayPal;
+	private JCheckBox chckbxCredit;
 
 	public ReservationWindow(Object object) {
 		this.flight = object;
@@ -49,7 +51,7 @@ public class ReservationWindow {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
-		JCheckBox chckbxPayPal = new JCheckBox("PayPal");
+		chckbxPayPal = new JCheckBox("PayPal");
 		chckbxPayPal.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		chckbxPayPal.setBounds(21, 61, 113, 25);
 		frame.getContentPane().add(chckbxPayPal);
@@ -58,7 +60,8 @@ public class ReservationWindow {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				if (chckbxPayPal.isSelected()) {
-					System.out.println("Paypal");
+					
+					chckbxCredit.setSelected(false);
 					OptPanelC.setVisible(false);
 					OptPanelP.setVisible(true);
 					
@@ -68,7 +71,7 @@ public class ReservationWindow {
 			}
 		});
 		
-		JCheckBox chckbxCredit = new JCheckBox("Credit");
+		chckbxCredit = new JCheckBox("Credit");
 		chckbxCredit.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		chckbxCredit.setBounds(174, 61, 113, 25);
 		frame.getContentPane().add(chckbxCredit);
@@ -77,7 +80,8 @@ public class ReservationWindow {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				if (chckbxCredit.isSelected()) {
-					System.out.println("Credit");
+					
+					chckbxPayPal.setSelected(false);
 					OptPanelP.setVisible(false);
 					OptPanelC.setVisible(true);
 				}
