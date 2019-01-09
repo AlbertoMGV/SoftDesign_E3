@@ -3,7 +3,7 @@ package es.deusto.deustoair.server.gateway;
 public class FacebookLoginHelper implements IAuthGateway{
 
 	@Override
-	public boolean login(String email, String password) {
+	public boolean login() {
 		// TODO Auto-generated method stub
 		return false;
 	}

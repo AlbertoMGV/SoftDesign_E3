@@ -21,6 +21,7 @@ public class DeustoAirServer {
 			IDeustoAirServerRemote serverRemote = new DeustoAirServerRemote();			
 			Naming.rebind(serverName, serverRemote);
 			System.out.println("* Main DeustoAir Server now running on: '" + serverName);
+			System.out.println("login test: " + serverRemote.login("test@gmail.com", "test", "google"));
 		} catch (Exception e) {
 			System.err.println("$ DeustoAir exception: " + e.getMessage());
 			e.printStackTrace();
