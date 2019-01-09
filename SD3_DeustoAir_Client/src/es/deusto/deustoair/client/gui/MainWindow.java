@@ -9,9 +9,14 @@ import es.deusto.deustoair.client.controller.MainController;
 import javax.swing.JLabel;
 import java.awt.Font;
 import javax.swing.JTextField;
+import javax.swing.DefaultListModel;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.JTable;
+import javax.swing.JList;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
 
 public class MainWindow {
 	
@@ -20,10 +25,17 @@ public class MainWindow {
 	
 	private JFrame frame;
 	private JTextField tfFrom;
-	private JTextField textField;
-	private JTextField textField_1;
-	private JTextField textField_2;
-
+	private JTextField tfTo;
+	private JTextField tfDepart;
+	private JTextField tfReturn;
+	private DefaultListModel<String> SearchList = new DefaultListModel<String>();
+	private JScrollPane scrollSearch = new JScrollPane();
+	private JLabel lblFrom;
+	private JLabel lblTo;
+	private JLabel lblDepart;
+	private JLabel lblReturn;
+	private JButton btnNewButton;
+	
 	
 	
 	
@@ -47,7 +59,7 @@ public class MainWindow {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
-		JLabel lblFrom = new JLabel("From");
+		lblFrom = new JLabel("From");
 		lblFrom.setFont(new Font("Tahoma", Font.BOLD, 18));
 		lblFrom.setBounds(12, 13, 57, 33);
 		frame.getContentPane().add(lblFrom);
@@ -58,47 +70,90 @@ public class MainWindow {
 		frame.getContentPane().add(tfFrom);
 		tfFrom.setColumns(10);
 		
-		JLabel lblTo = new JLabel("To");
+		lblTo = new JLabel("To");
 		lblTo.setFont(new Font("Tahoma", Font.BOLD, 18));
 		lblTo.setBounds(185, 13, 57, 33);
 		frame.getContentPane().add(lblTo);
 		
-		textField = new JTextField();
-		textField.setFont(new Font("Tahoma", Font.PLAIN, 16));
-		textField.setColumns(10);
-		textField.setBounds(185, 45, 140, 22);
-		frame.getContentPane().add(textField);
+		tfTo = new JTextField();
+		tfTo.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		tfTo.setColumns(10);
+		tfTo.setBounds(185, 45, 140, 22);
+		frame.getContentPane().add(tfTo);
 		
-		JLabel lblDepart = new JLabel("Depart");
+		lblDepart = new JLabel("Depart");
 		lblDepart.setFont(new Font("Tahoma", Font.BOLD, 18));
 		lblDepart.setBounds(353, 13, 84, 33);
 		frame.getContentPane().add(lblDepart);
 		
-		textField_1 = new JTextField();
-		textField_1.setFont(new Font("Tahoma", Font.PLAIN, 16));
-		textField_1.setColumns(10);
-		textField_1.setBounds(353, 45, 140, 22);
-		frame.getContentPane().add(textField_1);
+		tfDepart = new JTextField();
+		tfDepart.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		tfDepart.setColumns(10);
+		tfDepart.setBounds(353, 45, 140, 22);
+		frame.getContentPane().add(tfDepart);
 		
-		JLabel lblReturn = new JLabel("Return");
+		lblReturn = new JLabel("Return");
 		lblReturn.setFont(new Font("Tahoma", Font.BOLD, 18));
 		lblReturn.setBounds(510, 13, 94, 33);
 		frame.getContentPane().add(lblReturn);
 		
-		textField_2 = new JTextField();
-		textField_2.setFont(new Font("Tahoma", Font.PLAIN, 16));
-		textField_2.setColumns(10);
-		textField_2.setBounds(510, 45, 140, 22);
-		frame.getContentPane().add(textField_2);
+		tfReturn = new JTextField();
+		tfReturn.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		tfReturn.setColumns(10);
+		tfReturn.setBounds(510, 45, 140, 22);
+		frame.getContentPane().add(tfReturn);
 		
 		JButton btnSearch = new JButton("Search!");
-		btnSearch.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
+		btnSearch.setFont(new Font("Tahoma", Font.BOLD, 14));
+		btnSearch.addActionListener(new java.awt.event.ActionListener() {
+			public void actionPerformed(java.awt.event.ActionEvent evt) {
+				buttonSearchActionPerformed(evt);
 			}
 		});
 		btnSearch.setBounds(675, 19, 140, 49);
 		frame.getContentPane().add(btnSearch);
 		
+		JPanel SearchPanel = new JPanel();
+		SearchPanel.setBounds(12, 80, 800, 400);
+		SearchPanel.setLayout(new java.awt.GridLayout(1, 2));
+		SearchPanel.setBorder(new javax.swing.border.TitledBorder(new javax.swing.border.EtchedBorder(), "Search Flights"));
+		frame.getContentPane().add(SearchPanel);
+		
+		
+		JList list = new JList();
+		list.setModel(SearchList);
+		list.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+		scrollSearch.setViewportView(list);
+		
+		SearchPanel.add(scrollSearch, java.awt.BorderLayout.CENTER);
+		
+		btnNewButton = new JButton("Buy");
+		btnNewButton.setFont(new Font("Tahoma", Font.BOLD, 14));
+		btnNewButton.addActionListener(new java.awt.event.ActionListener() {
+			public void actionPerformed(java.awt.event.ActionEvent evt) {
+				buttonSelectActionPerformed(evt);
+			}
+		});
+		btnNewButton.setBounds(692, 493, 123, 33);
+		frame.getContentPane().add(btnNewButton);
+		
 		frame.setVisible(true);
+	}
+	//update list
+	private void buttonSearchActionPerformed(java.awt.event.ActionEvent evt) {
+		System.out.println("* Main Button");
+		SearchList.clear();
+		ArrayList<String> searchs = controller.getSearch(tfFrom.getText(),tfTo.getText(),tfDepart.getText(),tfReturn.getText());
+		for (int i = 0; i < searchs.size(); i++) {
+			SearchList.addElement(searchs.get(i));
+		}
+		 
+		
+		
+		
+	}
+	private void buttonSelectActionPerformed(java.awt.event.ActionEvent evt) {
+		System.out.println("* Select Button");
+		
 	}
 }
