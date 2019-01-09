@@ -35,6 +35,7 @@ public class MainWindow {
 	private JLabel lblDepart;
 	private JLabel lblReturn;
 	private JButton btnNewButton;
+	private JList list;
 	
 	
 	
@@ -120,7 +121,7 @@ public class MainWindow {
 		frame.getContentPane().add(SearchPanel);
 		
 		
-		JList list = new JList();
+		list = new JList();
 		list.setModel(SearchList);
 		list.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
 		scrollSearch.setViewportView(list);
@@ -154,6 +155,12 @@ public class MainWindow {
 	}
 	private void buttonSelectActionPerformed(java.awt.event.ActionEvent evt) {
 		System.out.println("* Select Button");
+		if (!list.isSelectionEmpty()) {
+			new ReservationWindow(list.getSelectedValue());
+			
+		} else {
+			System.out.println("* No selection");
+		}
 		
 	}
 }
