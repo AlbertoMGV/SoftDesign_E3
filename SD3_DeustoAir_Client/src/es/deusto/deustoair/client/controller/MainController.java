@@ -2,12 +2,12 @@ package es.deusto.deustoair.client.controller;
 
 import java.rmi.RemoteException;
 
-import es.deusto.deustoair.client.gui.SearchWindow;
+import es.deusto.deustoair.client.gui.MainWindow;
 
 public class MainController {
 
 	public MainController(String[] args) throws RemoteException {
-		new SearchWindow(this);
+		new MainWindow(this);
 		
 		
 	}
