@@ -18,12 +18,12 @@ public class MainController {
 		new MainController(args);
 	}
 	public ArrayList<String> getSearch(String from, String to, String Ddepart, String Dreturn) {
-		//make search
+		//make search, luego con los objs
 		System.out.println("* MainController");
 		ArrayList<String> SList= new ArrayList<String>();
-		SList.add("aaaa");
-		SList.add("bbbb");
-		SList.add("cccc");
+		SList.add("Madrid - Bilbao | 21/3/19-24/3/19 | 40€");
+		SList.add("Madrid - Bilbao | 21/3/19-24/3/19 | 50€");
+		SList.add("Madrid - Bilbao | 21/3/19-24/3/19 | 60€");
 		return SList;
 	}
 }
