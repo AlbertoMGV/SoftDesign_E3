@@ -2,11 +2,8 @@ package es.deusto.deustoair.server;
 
 import java.rmi.Naming;
 
-import es.deusto.ingenieria.sd.sms.server.TVProgramService;
-import es.deusto.ingenieria.sd.sms.server.remote.ITVProgramAdmin;
-import es.deusto.ingenieria.sd.sms.server.remote.ITVProgramReceiver;
-import es.deusto.ingenieria.sd.sms.server.remote.TVProgramAdmin;
-import es.deusto.ingenieria.sd.sms.server.remote.TVProgramReceiver;
+import es.deusto.deustoair.server.remote.DeustoAirServerRemote;
+import es.deusto.deustoair.server.remote.IDeustoAirServerRemote;
 
 public class DeustoAirServer {
 	
@@ -16,20 +13,16 @@ public class DeustoAirServer {
 			System.setSecurityManager(new SecurityManager());
 		}
 		
-		String nameAdmin = "//127.0.0.1:1099/admin";
+		
+		String serverName = "//" + args[0] + ":" + args[1] + "/" + args[2];
+		
 
-		try {
-			TVProgramService TVProgData = new TVProgramService();
-			
-			ITVProgramAdmin adminService = new TVProgramAdmin(TVProgData);			
-			Naming.rebind(nameAdmin, adminService);
-			System.out.println("* TVProgram Admin Service '" + nameAdmin + "' active and waiting...");
-			
-			ITVProgramReceiver receiverService = new TVProgramReceiver(TVProgData, args[0], args[1], args[2], args[3]);
-			Naming.rebind(nameReceiver, receiverService);
-			System.out.println("* TVProgram Receiver Service '" + nameReceiver + "' active and waiting...");
+		try {			
+			IDeustoAirServerRemote serverRemote = new DeustoAirServerRemote();			
+			Naming.rebind(serverName, serverRemote);
+			System.out.println("* Main DeustoAir Server now running on: '" + serverName);
 		} catch (Exception e) {
-			System.err.println("$ TVProgramManager exception: " + e.getMessage());
+			System.err.println("$ DeustoAir exception: " + e.getMessage());
 			e.printStackTrace();
 		}
 	}
