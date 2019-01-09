@@ -2,7 +2,7 @@ package es.deusto.deustoair.client.remote;
 
 public class RMIServiceLocator {
 	/*
-	private ITVProgramAdmin adminService;
+	private IDeustoAirService DService;
 
     public RMIServiceLocator(){ 
     	
@@ -10,17 +10,16 @@ public class RMIServiceLocator {
 
     public void setService(String[] args) {
     	try {
-	    	String nameAdm = "//" + args[0] + ":" + args[1] + "/" + args[2];
-	    	String nameRec = "//" + args[0] + ":" + args[1] + "/" + args[3];
-			adminService = (ITVProgramAdmin) java.rmi.Naming.lookup(nameAdm);
+	    	
+			DService = (IDeustoAirService) java.rmi.Naming.lookup(nameServ);
 			
     	} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
     }
 
-    public ITVProgramAdmin getAdminService() {
-    	return adminService;
+    public IDeustoAirService getAdminService() {
+    	return DService;
     }
     */
 }
