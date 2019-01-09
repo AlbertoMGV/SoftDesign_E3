@@ -24,7 +24,7 @@ public class ReservationWindow {
 	private JButton btnPay;
 	private JTextField tfEmail;
 	private JTextField tfpass;
-	private JLabel label;
+	private JLabel lblNumber;
 	private JLabel lblCvv;
 	private JTextField textField;
 	private JTextField textField_1;
@@ -101,9 +101,9 @@ public class ReservationWindow {
 		frame.getContentPane().add(OptPanelC);
 		OptPanelC.setLayout(null);
 		
-		label = new JLabel("Email:");
-		label.setBounds(12, 48, 56, 16);
-		OptPanelC.add(label);
+		lblNumber = new JLabel("Number:");
+		lblNumber.setBounds(12, 48, 56, 16);
+		OptPanelC.add(lblNumber);
 		
 		lblCvv = new JLabel("CVV:");
 		lblCvv.setBounds(12, 75, 70, 16);
@@ -129,6 +129,18 @@ public class ReservationWindow {
 		textField_2.setColumns(10);
 		
 		btnPay = new JButton("Pay");
+		btnPay.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.out.println("* Pay");
+				if (chckbxCredit.isSelected() || chckbxPayPal.isSelected()) {
+					
+					//pay();
+					
+				} else {
+					System.out.println("* Choose Payment method");
+				}
+			}
+		});
 		btnPay.setBounds(362, 274, 97, 25);
 		frame.getContentPane().add(btnPay);
 		
