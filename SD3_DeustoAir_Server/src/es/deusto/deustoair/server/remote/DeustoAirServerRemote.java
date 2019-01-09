@@ -20,11 +20,11 @@ public class DeustoAirServerRemote extends UnicastRemoteObject implements IDeust
 	
 	@Override
 	public boolean register(String username, String password, String authMethod, AirportDTO defaultAirport) throws RemoteException {
-		return service.register(username, password, authMethod, defaultAirport);
+		return service.register(username, password, authMethod, "paypal", defaultAirport);
 	}
 	@Override
 	public boolean login(String username, String password, String authMethod) throws RemoteException {
-		return service.login(username, password, authMethod);
+		return service.login(username, password, authMethod, false);
 	}
 	@Override
 	public FlightDTO[] searchFlights(AirportDTO origin, AirportDTO destination, String dDate, String rDate, int seats) throws RemoteException {

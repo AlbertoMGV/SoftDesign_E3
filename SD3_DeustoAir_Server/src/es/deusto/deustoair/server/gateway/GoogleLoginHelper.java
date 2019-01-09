@@ -23,6 +23,7 @@ public class GoogleLoginHelper implements IAuthGateway{
 		String text = email + ";" + password;
 		boolean result = false;
 		try {
+			System.out.println(ip+":"+port);
 			socket = new Socket(this.ip, Integer.parseInt(this.port));
 			DataOutputStream out = new DataOutputStream(socket.getOutputStream());
 			out.writeUTF(text);
