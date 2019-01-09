@@ -12,13 +12,15 @@ public class Reservation {
 	private User bookedBy;
 	private Payment payment;
 	
-	public Reservation(int id, Date date, int airlineComission, FlightBooking[] bookedFlights, User bookedBy) {
+	public Reservation(int id, Date date, int airlineComission, FlightBooking[] bookedFlights, User bookedBy, int price) {
 		this.id = id;
 		this.date = date;
 		this.airlineComission = airlineComission;
 		this.bookedFlights = bookedFlights;
 		this.bookedBy = bookedBy;
-		this.price = calcPrice();
+		if(price == 0) {
+			this.price = calcPrice();
+		}
 		//Orders aren't paid at the same time as reserving so there will never be a payment before a Reservation, it must be added later via setter
 		this.payment = null;
 	}

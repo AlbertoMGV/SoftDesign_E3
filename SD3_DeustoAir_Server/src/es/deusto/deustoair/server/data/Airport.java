@@ -7,6 +7,13 @@ public class Airport {
 	private String city;
 	private String country;
 	
+	public Airport(String code) {
+		this.code = code;
+		this.name = "";
+		this.city = "";
+		this.country = "";
+	}
+	
 	public Airport(String code, String name, String city, String country) {
 		super();
 		this.code = code;
