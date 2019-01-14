@@ -1,183 +1,142 @@
 package es.deusto.deustoair.client.gui;
 
 import java.awt.EventQueue;
+import java.util.ArrayList;
 
 import javax.swing.JFrame;
-import javax.swing.JList;
-import javax.swing.JRadioButton;
-import javax.swing.JCheckBox;
+
+import es.deusto.deustoair.client.controller.MainController;
 import javax.swing.JLabel;
 import java.awt.Font;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import javax.swing.JPanel;
-import javax.swing.JButton;
 import javax.swing.JTextField;
+import javax.swing.DefaultListModel;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import javax.swing.JTable;
+import javax.swing.JList;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
 
 public class ReservationWindow {
-	private Object flight;
+	
+	private static final long serialVersionUID = 1L;
+	private MainController controller;
+	
 	private JFrame frame;
-	private JPanel OptPanelC;
-	private JPanel OptPanelP;
-	private JLabel lblEmail;
-	private JLabel lblPassword;
-	private JButton btnPay;
-	private JTextField tfEmail;
-	private JTextField tfpass;
-	private JLabel lblNumber;
-	private JLabel lblCvv;
-	private JTextField textField;
-	private JTextField textField_1;
-	private JLabel lblExpiry;
-	private JTextField textField_2;
-	private JLabel lblSeats;
-	private JTextField textField_3;
-	private JCheckBox chckbxPayPal;
-	private JCheckBox chckbxCredit;
-
-	public ReservationWindow(Object object) {
-		this.flight = object;
+	private JTextField tfFrom;
+	private DefaultListModel<String> SearchList = new DefaultListModel<String>();
+	private JScrollPane scrollSearch = new JScrollPane();
+	private JLabel lblFrom;
+	private JButton btnNewButton;
+	private JList list;
+	private JButton btnNewButton_1;
+	private JButton btnClose;
+	
+	
+	public ReservationWindow(MainController controller) {
+		this.controller = controller;
 		initialize();
 	}
-
 	/**
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
 		frame = new JFrame();
+		frame.setBounds(100, 100, 845, 594);
+		
 		frame.setResizable(false);
-		frame.setTitle(flight.toString());
-		frame.setBounds(100, 100, 500, 352);
+		frame.setTitle("Deusto Air - Reservations");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
-		chckbxPayPal = new JCheckBox("PayPal");
-		chckbxPayPal.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		chckbxPayPal.setBounds(21, 61, 113, 25);
-		frame.getContentPane().add(chckbxPayPal);
-		chckbxPayPal.addActionListener(new ActionListener() {
-			
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				if (chckbxPayPal.isSelected()) {
-					
-					chckbxCredit.setSelected(false);
-					OptPanelC.setVisible(false);
-					OptPanelP.setVisible(true);
-					
-					
-				}
+		lblFrom = new JLabel("User Email");
+		lblFrom.setFont(new Font("Tahoma", Font.BOLD, 18));
+		lblFrom.setBounds(12, 13, 303, 33);
+		frame.getContentPane().add(lblFrom);
+		
+		tfFrom = new JTextField();
+		tfFrom.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		tfFrom.setBounds(12, 45, 303, 22);
+		frame.getContentPane().add(tfFrom);
+		tfFrom.setColumns(10);
+		
+		JPanel SearchPanel = new JPanel();
+		SearchPanel.setBounds(12, 80, 800, 400);
+		SearchPanel.setLayout(new java.awt.GridLayout(1, 2));
+		SearchPanel.setBorder(new javax.swing.border.TitledBorder(new javax.swing.border.EtchedBorder(), "Search Flights"));
+		frame.getContentPane().add(SearchPanel);
+		
+		
+		list = new JList();
+		list.setModel(SearchList);
+		list.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+		scrollSearch.setViewportView(list);
+		
+		SearchPanel.add(scrollSearch, java.awt.BorderLayout.CENTER);
+		
+		btnNewButton = new JButton("Info");
+		btnNewButton.setFont(new Font("Tahoma", Font.BOLD, 14));
+		btnNewButton.addActionListener(new java.awt.event.ActionListener() {
+			public void actionPerformed(java.awt.event.ActionEvent evt) {
+				buttonSelectActionPerformed(evt);
+			}
+		});
+		btnNewButton.setBounds(692, 493, 123, 33);
+		frame.getContentPane().add(btnNewButton);
+		
+		JButton btnMyReservations = new JButton("Delete");
+		btnMyReservations.setFont(new Font("Tahoma", Font.BOLD, 14));
+		btnMyReservations.addActionListener(new java.awt.event.ActionListener() {
+			public void actionPerformed(java.awt.event.ActionEvent evt) {
 				
 			}
 		});
+		btnMyReservations.setBounds(542, 493, 123, 33);
+		frame.getContentPane().add(btnMyReservations);
 		
-		chckbxCredit = new JCheckBox("Credit");
-		chckbxCredit.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		chckbxCredit.setBounds(174, 61, 113, 25);
-		frame.getContentPane().add(chckbxCredit);
-		chckbxCredit.addActionListener(new ActionListener() {
-			
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				if (chckbxCredit.isSelected()) {
-					
-					chckbxPayPal.setSelected(false);
-					OptPanelP.setVisible(false);
-					OptPanelC.setVisible(true);
-				}
-				
+		btnNewButton_1 = new JButton("Check Reservations");
+		btnNewButton_1.setFont(new Font("Tahoma", Font.BOLD, 13));
+		btnNewButton_1.addActionListener(new java.awt.event.ActionListener() {
+			public void actionPerformed(java.awt.event.ActionEvent evt) {
+				buttonReservActionPerformed(evt);
 			}
 		});
+		btnNewButton_1.setBounds(611, 24, 200, 43);
+		frame.getContentPane().add(btnNewButton_1);
 		
-		JLabel lblPaymentMethod = new JLabel("Payment Method");
-		lblPaymentMethod.setFont(new Font("Tahoma", Font.BOLD, 16));
-		lblPaymentMethod.setBounds(21, 13, 152, 39);
-		frame.getContentPane().add(lblPaymentMethod);
-		
-		OptPanelC = new JPanel();
-		OptPanelC.setBounds(21, 95, 450, 166);
-		OptPanelC.setBorder(new javax.swing.border.TitledBorder(new javax.swing.border.EtchedBorder(), "Credit Info"));
-		OptPanelC.setVisible(false);
-		frame.getContentPane().add(OptPanelC);
-		OptPanelC.setLayout(null);
-		
-		lblNumber = new JLabel("Number:");
-		lblNumber.setBounds(12, 48, 56, 16);
-		OptPanelC.add(lblNumber);
-		
-		lblCvv = new JLabel("CVV:");
-		lblCvv.setBounds(12, 75, 70, 16);
-		OptPanelC.add(lblCvv);
-		
-		textField = new JTextField();
-		textField.setBounds(80, 43, 116, 22);
-		OptPanelC.add(textField);
-		textField.setColumns(10);
-		
-		textField_1 = new JTextField();
-		textField_1.setBounds(80, 73, 116, 22);
-		OptPanelC.add(textField_1);
-		textField_1.setColumns(10);
-		
-		lblExpiry = new JLabel("Expiry:");
-		lblExpiry.setBounds(12, 104, 56, 16);
-		OptPanelC.add(lblExpiry);
-		
-		textField_2 = new JTextField();
-		textField_2.setBounds(80, 101, 116, 22);
-		OptPanelC.add(textField_2);
-		textField_2.setColumns(10);
-		
-		btnPay = new JButton("Pay");
-		btnPay.addActionListener(new ActionListener() {
+		btnClose = new JButton("Close");
+		btnClose.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				System.out.println("* Pay");
-				if (chckbxCredit.isSelected() || chckbxPayPal.isSelected()) {
-					
-					//pay();
-					
-				} else {
-					System.out.println("* Choose Payment method");
-				}
+				frame.dispose();
 			}
 		});
-		btnPay.setBounds(362, 274, 97, 25);
-		frame.getContentPane().add(btnPay);
-		
-		OptPanelP = new JPanel();
-		OptPanelP.setBounds(21, 95, 450, 166);
-		frame.getContentPane().add(OptPanelP);
-		OptPanelP.setBorder(new javax.swing.border.TitledBorder(new javax.swing.border.EtchedBorder(), "PayPal Info"));
-		OptPanelP.setVisible(false);
-		OptPanelP.setLayout(null);
-		
-		lblEmail = new JLabel("Email:");
-		lblEmail.setBounds(12, 38, 56, 16);
-		OptPanelP.add(lblEmail);
-		
-		lblPassword = new JLabel("Password:");
-		lblPassword.setBounds(12, 71, 70, 16);
-		OptPanelP.add(lblPassword);
-		
-		tfEmail = new JTextField();
-		tfEmail.setBounds(89, 35, 116, 22);
-		OptPanelP.add(tfEmail);
-		tfEmail.setColumns(10);
-		
-		tfpass = new JTextField();
-		tfpass.setBounds(89, 68, 116, 22);
-		OptPanelP.add(tfpass);
-		tfpass.setColumns(10);
-		
-		lblSeats = new JLabel("Seats Amount:");
-		lblSeats.setBounds(21, 274, 87, 16);
-		frame.getContentPane().add(lblSeats);
-		
-		textField_3 = new JTextField();
-		textField_3.setBounds(120, 274, 39, 22);
-		frame.getContentPane().add(textField_3);
-		textField_3.setColumns(10);
+		btnClose.setFont(new Font("Tahoma", Font.BOLD, 14));
+		btnClose.setBounds(407, 493, 123, 33);
+		frame.getContentPane().add(btnClose);
 		
 		frame.setVisible(true);
 	}
+	private void buttonSelectActionPerformed(java.awt.event.ActionEvent evt) {
+		System.out.println("* Select Button");
+		if (!list.isSelectionEmpty()) {
+			new InfoWindow(list.getSelectedValue());
+			
+		} else {
+			System.out.println("* No selection");
+		}
+		
+	}
+	private void buttonReservActionPerformed(java.awt.event.ActionEvent evt) {
+		System.out.println("* Main Button");
+		SearchList.clear();
+		ArrayList<String> searchs = controller.getReservations(tfFrom.getText());
+		for (int i = 0; i < searchs.size(); i++) {
+			SearchList.addElement(searchs.get(i));
+		}
+		
+		
+	}
+	
+	
 }

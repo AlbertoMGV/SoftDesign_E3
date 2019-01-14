@@ -138,6 +138,16 @@ public class MainWindow {
 		btnNewButton.setBounds(692, 493, 123, 33);
 		frame.getContentPane().add(btnNewButton);
 		
+		JButton btnMyReservations = new JButton("My Reservations");
+		btnMyReservations.setFont(new Font("Tahoma", Font.BOLD, 14));
+		btnMyReservations.addActionListener(new java.awt.event.ActionListener() {
+			public void actionPerformed(java.awt.event.ActionEvent evt) {
+				buttonReservActionPerformed(evt);
+			}
+		});
+		btnMyReservations.setBounds(497, 493, 168, 33);
+		frame.getContentPane().add(btnMyReservations);
+		
 		frame.setVisible(true);
 	}
 	//update list
@@ -156,11 +166,16 @@ public class MainWindow {
 	private void buttonSelectActionPerformed(java.awt.event.ActionEvent evt) {
 		System.out.println("* Select Button");
 		if (!list.isSelectionEmpty()) {
-			new ReservationWindow(list.getSelectedValue());
+			new PaymentWindow(list.getSelectedValue());
 			
 		} else {
 			System.out.println("* No selection");
 		}
+		
+	}
+	
+	private void buttonReservActionPerformed(java.awt.event.ActionEvent evt) {
+		new ReservationWindow(this.controller);
 		
 	}
 }
