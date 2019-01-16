@@ -37,6 +37,8 @@ public class PaymentWindow {
 	private JCheckBox chckbxCredit;
 	private JTextField textField_4;
 	private JButton btnClose;
+	private JLabel lblPass;
+	private JTextField textField_5;
 
 	public PaymentWindow(Object object) {
 		this.flight = object;
@@ -50,33 +52,13 @@ public class PaymentWindow {
 		frame = new JFrame();
 		frame.setResizable(false);
 		frame.setTitle("Deusto Air - Payment");
-		frame.setBounds(100, 100, 500, 385);
+		frame.setBounds(100, 100, 500, 415);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
-		chckbxPayPal = new JCheckBox("PayPal");
-		chckbxPayPal.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		chckbxPayPal.setBounds(21, 158, 113, 25);
-		frame.getContentPane().add(chckbxPayPal);
-		chckbxPayPal.addActionListener(new ActionListener() {
-			
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				if (chckbxPayPal.isSelected()) {
-					
-					chckbxCredit.setSelected(false);
-					OptPanelC.setVisible(false);
-					OptPanelP.setVisible(true);
-					
-					
-				}
-				
-			}
-		});
-		
 		chckbxCredit = new JCheckBox("Credit");
 		chckbxCredit.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		chckbxCredit.setBounds(138, 158, 113, 25);
+		chckbxCredit.setBounds(138, 183, 113, 25);
 		frame.getContentPane().add(chckbxCredit);
 		chckbxCredit.addActionListener(new ActionListener() {
 			
@@ -91,6 +73,32 @@ public class PaymentWindow {
 				
 			}
 		});
+		
+		
+		chckbxPayPal = new JCheckBox("PayPal");
+		chckbxPayPal.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		chckbxPayPal.setBounds(21, 183, 113, 25);
+		chckbxPayPal.setSelected(true);
+		frame.getContentPane().add(chckbxPayPal);
+		chckbxPayPal.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				if (chckbxPayPal.isSelected()) {
+					
+					chckbxCredit.setSelected(false);
+					OptPanelC.setVisible(false);
+					OptPanelP.setVisible(true);
+					
+					
+					System.out.println("* PPPP");
+					
+				}
+				
+			}
+		});
+		
+		
 		
 		JLabel lblPaymentMethod = new JLabel(flight.toString());
 		lblPaymentMethod.setFont(new Font("Tahoma", Font.BOLD, 16));
@@ -110,20 +118,20 @@ public class PaymentWindow {
 				}
 			}
 		});
-		btnPay.setBounds(374, 317, 97, 25);
+		btnPay.setBounds(374, 342, 97, 25);
 		frame.getContentPane().add(btnPay);
 		
 		lblSeats = new JLabel("Seats Amount:");
-		lblSeats.setBounds(21, 321, 87, 16);
+		lblSeats.setBounds(21, 346, 87, 16);
 		frame.getContentPane().add(lblSeats);
 		
 		textField_3 = new JTextField();
-		textField_3.setBounds(120, 318, 39, 22);
+		textField_3.setBounds(120, 343, 39, 22);
 		frame.getContentPane().add(textField_3);
 		textField_3.setColumns(10);
 		
 		OptPanelC = new JPanel();
-		OptPanelC.setBounds(21, 192, 450, 112);
+		OptPanelC.setBounds(21, 217, 450, 112);
 		frame.getContentPane().add(OptPanelC);
 		OptPanelC.setBorder(new javax.swing.border.TitledBorder(new javax.swing.border.EtchedBorder(), "Credit Info"));
 		OptPanelC.setVisible(false);
@@ -157,10 +165,10 @@ public class PaymentWindow {
 		textField_2.setColumns(10);
 		
 		OptPanelP = new JPanel();
-		OptPanelP.setBounds(0, 0, 450, 112);
-		OptPanelC.add(OptPanelP);
+		OptPanelP.setBounds(21, 217, 450, 112);
+		frame.getContentPane().add(OptPanelP);
 		OptPanelP.setBorder(new javax.swing.border.TitledBorder(new javax.swing.border.EtchedBorder(), "PayPal Info"));
-		OptPanelP.setVisible(false);
+		OptPanelP.setVisible(true);
 		OptPanelP.setLayout(null);
 		
 		lblEmail = new JLabel("Email:");
@@ -182,7 +190,7 @@ public class PaymentWindow {
 		tfpass.setColumns(10);
 		
 		OptPanelU = new JPanel();
-		OptPanelU.setBounds(21, 80, 450, 69);
+		OptPanelU.setBounds(21, 80, 450, 94);
 		frame.getContentPane().add(OptPanelU);
 		OptPanelU.setBorder(new javax.swing.border.TitledBorder(new javax.swing.border.EtchedBorder(), "DeustAir User"));
 		OptPanelU.setVisible(true);
@@ -197,13 +205,22 @@ public class PaymentWindow {
 		OptPanelU.add(textField_4);
 		textField_4.setColumns(10);
 		
+		lblPass = new JLabel("Pass:");
+		lblPass.setBounds(12, 61, 56, 16);
+		OptPanelU.add(lblPass);
+		
+		textField_5 = new JTextField();
+		textField_5.setColumns(10);
+		textField_5.setBounds(64, 58, 190, 22);
+		OptPanelU.add(textField_5);
+		
 		btnClose = new JButton("Close");
 		btnClose.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				frame.dispose();
 			}
 		});
-		btnClose.setBounds(265, 317, 97, 25);
+		btnClose.setBounds(265, 342, 97, 25);
 		frame.getContentPane().add(btnClose);
 		
 		frame.setVisible(true);

@@ -2,6 +2,7 @@ package es.deusto.deustoair.client.gui;
 
 import java.awt.EventQueue;
 import java.util.ArrayList;
+import java.util.List;
 
 import javax.swing.JFrame;
 
@@ -148,13 +149,27 @@ public class MainWindow {
 		btnMyReservations.setBounds(497, 493, 168, 33);
 		frame.getContentPane().add(btnMyReservations);
 		
+		JButton btnNewButton_1 = new JButton("Register");
+		btnNewButton_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		btnNewButton_1.setFont(new Font("Tahoma", Font.BOLD, 14));
+		btnNewButton_1.setBounds(353, 493, 123, 33);
+		frame.getContentPane().add(btnNewButton_1);
+		btnNewButton_1.addActionListener(new java.awt.event.ActionListener() {
+			public void actionPerformed(java.awt.event.ActionEvent evt) {
+				buttonRegActionPerformed(evt);
+			}
+		});
+		
 		frame.setVisible(true);
 	}
 	//update list
 	private void buttonSearchActionPerformed(java.awt.event.ActionEvent evt) {
 		System.out.println("* Main Button");
 		SearchList.clear();
-		ArrayList<String> searchs = controller.getSearch(tfFrom.getText(),tfTo.getText(),tfDepart.getText(),tfReturn.getText());
+		List<String> searchs = controller.getSearch(tfFrom.getText(),tfTo.getText(),tfDepart.getText(),tfReturn.getText());
 		for (int i = 0; i < searchs.size(); i++) {
 			SearchList.addElement(searchs.get(i));
 		}
@@ -176,6 +191,11 @@ public class MainWindow {
 	
 	private void buttonReservActionPerformed(java.awt.event.ActionEvent evt) {
 		new ReservationWindow(this.controller);
+		
+	}
+	
+	private void buttonRegActionPerformed(java.awt.event.ActionEvent evt) {
+		new RegisterWindow(this.controller);
 		
 	}
 }

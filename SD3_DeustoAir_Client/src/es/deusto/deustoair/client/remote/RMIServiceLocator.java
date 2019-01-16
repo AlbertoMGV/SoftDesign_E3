@@ -1,8 +1,12 @@
 package es.deusto.deustoair.client.remote;
 
+import es.deusto.deustoair.server.remote.IDeustoAirServerRemote;
+
 public class RMIServiceLocator {
-	/*
-	private IDeustoAirService DService;
+	
+	private IDeustoAirServerRemote airService;
+	
+	
 
     public RMIServiceLocator(){ 
     	
@@ -10,16 +14,15 @@ public class RMIServiceLocator {
 
     public void setService(String[] args) {
     	try {
-	    	
-			DService = (IDeustoAirService) java.rmi.Naming.lookup(nameServ);
-			
+	    	String nameAdm = "//" + args[0] + ":" + args[1] + "/" + args[2];
+	    	airService = (IDeustoAirServerRemote) java.rmi.Naming.lookup(nameAdm);
     	} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
     }
 
-    public IDeustoAirService getAdminService() {
-    	return DService;
+    public IDeustoAirServerRemote getDeustoService() {
+    	return this.airService;
     }
-    */
+ 
 }

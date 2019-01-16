@@ -32,6 +32,7 @@ public class ReservationWindow {
 	private JList list;
 	private JButton btnNewButton_1;
 	private JButton btnClose;
+	private JTextField textField;
 	
 	
 	public ReservationWindow(MainController controller) {
@@ -115,6 +116,17 @@ public class ReservationWindow {
 		btnClose.setBounds(407, 493, 123, 33);
 		frame.getContentPane().add(btnClose);
 		
+		JLabel lblUserPass = new JLabel("User Pass");
+		lblUserPass.setFont(new Font("Tahoma", Font.BOLD, 18));
+		lblUserPass.setBounds(327, 13, 254, 33);
+		frame.getContentPane().add(lblUserPass);
+		
+		textField = new JTextField();
+		textField.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		textField.setColumns(10);
+		textField.setBounds(327, 45, 254, 22);
+		frame.getContentPane().add(textField);
+		
 		frame.setVisible(true);
 	}
 	private void buttonSelectActionPerformed(java.awt.event.ActionEvent evt) {
@@ -137,6 +149,4 @@ public class ReservationWindow {
 		
 		
 	}
-	
-	
 }

@@ -20,6 +20,10 @@ public class AirportDTO implements Serializable{
 		this.city = city;
 		this.country = country;
 	}
+	public AirportDTO(String code) {
+		this.code = code;
+		
+	}
 	
 	public String getCode() {
 		return code;
