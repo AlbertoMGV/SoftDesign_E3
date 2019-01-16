@@ -2,6 +2,7 @@ package es.deusto.deustoair.client.gui;
 
 import java.awt.EventQueue;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import javax.swing.JFrame;
@@ -15,6 +16,8 @@ import javax.swing.JTextField;
 import javax.swing.DefaultListModel;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.awt.event.ActionEvent;
 import javax.swing.JTable;
 import javax.swing.JList;
@@ -183,10 +186,14 @@ public class MainWindow {
 		System.out.println("* Main Button");
 		SearchList.clear();
 		int seats = (Integer) spinner.getValue();
+		String info = null;
+		
 		
 		FlightDTO[] searchs = controller.getSearch(tfFrom.getText(),tfTo.getText(),tfDepart.getText(),tfReturn.getText(),seats);
 		for (int i = 0; i < searchs.length; i++) {
-			SearchList.addElement(searchs[i].toString());
+			
+			info = "["+searchs[i].getOriginCode()+" - "+searchs[i].getDestinationCode()+"] Price: "+searchs[i].getPrice();
+			SearchList.addElement(info);
 		}
 		 
 		
