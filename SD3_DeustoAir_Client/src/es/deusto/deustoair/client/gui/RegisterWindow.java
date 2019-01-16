@@ -77,10 +77,13 @@ public class RegisterWindow {
 		JButton btnRegister = new JButton("Register");
 		btnRegister.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				System.out.println(bgroup.getSelection().getActionCommand());
 				AirportDTO homeAir = new AirportDTO(txairport.getText());
-				if (txpass.equals(txrpass)) {
-					controller.register(txemail,txpass,bgroup.getSelection().getActionCommand(),homeAir);
+				if (txpass.getText().equals(txrpass.getText())) {
+					if (controller.register(txemail.getText(),txpass.getText(),bgroup.getSelection().getActionCommand(),homeAir)) {
+						System.out.println("* REGISTERED");
+					} else {
+						System.out.println("* ERROR");
+					}
 				}
 				
 					

@@ -5,6 +5,8 @@ import java.util.ArrayList;
 
 import es.deusto.deustoair.client.gui.MainWindow;
 import es.deusto.deustoair.client.remote.RMIServiceLocator;
+import es.deusto.deustoair.server.data.dto.AirportDTO;
+import es.deusto.deustoair.server.remote.IDeustoAirServerRemote;
 
 public class MainController {
 
@@ -14,10 +16,12 @@ public class MainController {
 	
 	public MainController(String[] args) throws RemoteException {
 		
+		
 		rsl = new RMIServiceLocator();
 		rsl.setService(args);
-		new MainWindow(this);
 		
+		new MainWindow(this);
+				
 		
 	}
 	public static void main(String[] args) throws RemoteException {
@@ -44,9 +48,19 @@ public class MainController {
 		RList.add("Portugalete - Sestao | 28/3/19-24/3/19 | 60€");
 		return RList;
 	}
-	public boolean register(String from) {
+	public boolean register(String email,String pass,String authm,AirportDTO homeAir) {
+			IDeustoAirServerRemote srv = rsl.getDeustoService();
+			try {
+				if (srv.register(email, pass, authm, homeAir)) {
+					return true;
+				} else {
+					return false;
+				} 
+			} catch (RemoteException e) {
+				
+				e.printStackTrace();
+			}
 		
-		
-		return true;
+		return false;
 	}
 }
