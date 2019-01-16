@@ -23,14 +23,17 @@ public class DeustoAirService {
 			User u = new User((int) (Math.random() * 10000), email, preferredPaymentMethod, DataObjectAssembler.disassemble(defaultAirport));
 			DeustoAirDatabase.store(u);
 			result = true;
+			System.out.println(u.getEmail() + " registered.");
 		}
 		return result;
 	}
 	public synchronized boolean login(String email, String password, String authMethod, boolean reg) {
 		boolean result = false;
+
 		IAuthGateway authGateway = LoginGatewayFactory.createGateway(email, password, authMethod);
-		if(DeustoAirDatabase.getUser(email) != null || reg == true) {
+		if(reg || (DeustoAirDatabase.getUser(email) != null)) {
 			result = authGateway.login();
+			System.out.println(email + " logged in.");
 		}
 		return result;
 	}
