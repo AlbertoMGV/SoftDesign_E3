@@ -12,10 +12,14 @@ import es.deusto.deustoair.server.data.dto.UserDTO;
 
 public class DeustoAirServerRemote extends UnicastRemoteObject implements IDeustoAirServerRemote {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private DeustoAirService service;
 	
-	public DeustoAirServerRemote() throws RemoteException{
-		service = new DeustoAirService();
+	public DeustoAirServerRemote(DeustoAirService service) throws RemoteException{
+		this.service = service;
 	}
 	
 	@Override

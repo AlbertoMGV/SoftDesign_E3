@@ -20,8 +20,9 @@ public class DeustoAirServer {
 		String serverName = "//" + args[0] + ":" + args[1] + "/" + args[2];
 		
 
-		try {			
-			IDeustoAirServerRemote serverRemote = new DeustoAirServerRemote();			
+		try {
+			DeustoAirService service = new DeustoAirService();
+			IDeustoAirServerRemote serverRemote = new DeustoAirServerRemote(service);			
 			Naming.rebind(serverName, serverRemote);
 			/*
 			System.out.println("* Main DeustoAir Server now running on: '" + serverName);
