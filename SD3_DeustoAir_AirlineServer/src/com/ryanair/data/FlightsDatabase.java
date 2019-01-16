@@ -16,6 +16,8 @@ public class FlightsDatabase {
 		Route r = new Route("RY", 2100, 45, 150, "MAD", "BIO");
 		Route r1 = new Route("RY", 2101, 45, 150, "BIO", "MAD");
 		
+		System.out.println(r.destination);
+		
 		routes.add(r);
 		routes.add(r1);
 		
@@ -23,6 +25,7 @@ public class FlightsDatabase {
 
 		try {
 			Flight f1 = new Flight(r, format.parse("09/01/2019"), 52);
+			System.out.println(f1.destination);
 			Flight f2 = new Flight(r, format.parse("10/01/2019"), 49);
 			Flight f3 = new Flight(r1, format.parse("09/01/2019"), 41);
 			Flight f4 = new Flight(r1, format.parse("10/01/2019"), 65);
@@ -38,13 +41,17 @@ public class FlightsDatabase {
 	
 	public Flight[] searchFlights(String origin, String destination, String dDate, String rDate, int seats) {
 		ArrayList<Flight> result = new ArrayList<Flight>();
+		int n = 0;
 		for(Flight f : flights) {
 			if(f.getOrigin().equals(origin)) {
+				System.out.println("F"+(++n) + ": " + f.origin + ", destination: " + f.destination + ", searched: " + origin + "->" + destination);
 				if(f.getDestination().equals(destination)) {
 					SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
 					try {
-						if((format.parse(dDate).getTime() < f.getDepartureDateTime().getTime()) && (format.parse(rDate).getTime() > f.getArrivalDateTime().getTime())) {
+						
+						if((format.parse(dDate).getTime() <= f.getDepartureDateTime().getTime())) {
 							if(f.getAvailableSeats() > 0) {
+								System.out.println("found");
 								result.add(f);
 							}
 						}

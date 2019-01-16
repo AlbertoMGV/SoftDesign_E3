@@ -48,7 +48,8 @@ public class RyanairService extends Thread{
 				result = result + resultArr[i].toString() + "#";
 			}
 			result = result.substring(0, result.length() - 1);
-			this.out.writeUTF(result+"");					
+			this.out.writeUTF(result+"");
+			System.out.println("Response: " + result);
 			System.out.println("   - RyanairService - Sent data to '" + tcpSocket.getInetAddress().getHostAddress() + ":" + tcpSocket.getPort() + "' -> '" + result + "'");
 		} catch (EOFException e) {
 			System.err.println("   # RyanairService - TCPConnection EOF error" + e.getMessage());

@@ -11,14 +11,14 @@ public class Flight extends Route{
 	private int price;
 	
 	public Flight(Route r, Date departureDateTime, int price) {
-		super(r.airlineCode, r.fltNumber, r.duration, r.totalSeats, r.destination, r.destination);
+		super(r.airlineCode, r.fltNumber, r.duration, r.totalSeats, r.origin, r.destination);
 		this.availableSeats = r.totalSeats;
 		this.departureDateTime = departureDateTime;
 		this.price = price;
 	}
 	public Flight(String airlineCode, int fltNumber, int duration, int totalSeats, Date departureDateTime,
 			int availableSeats, String origin, String destination, int price) {
-		super(airlineCode, fltNumber, duration, totalSeats, destination, destination);
+		super(airlineCode, fltNumber, duration, totalSeats, origin, destination);
 		this.departureDateTime = departureDateTime;
 		this.availableSeats = availableSeats;
 		this.price = price;
