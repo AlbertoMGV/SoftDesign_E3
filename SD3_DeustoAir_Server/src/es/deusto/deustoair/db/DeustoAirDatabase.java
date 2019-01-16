@@ -29,6 +29,7 @@ public class DeustoAirDatabase {
 		airports.put("BIO",new Airport("BIO", "Loiu Airport", "Bilbao", "Spain"));
 		airports.put("MAD",new Airport("MAD", "Adolfo Suarez Airport", "Madrid", "Spain"));
 		routes = new HashMap<String, Route>();
+		users = new HashMap<String, User>();
 		flights = new HashMap<String, Flight>();
 		reservations = new HashMap<Integer, Reservation>();
 		payments = new HashMap<Integer, Payment>();
