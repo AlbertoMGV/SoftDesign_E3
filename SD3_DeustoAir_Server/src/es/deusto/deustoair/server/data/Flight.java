@@ -16,7 +16,7 @@ public class Flight extends Route {
 	}
 	public Flight(String airlineCode, int fltNumber, int duration, int totalSeats, Date departureDateTime,
 			int availableSeats, Airport origin, Airport destination, int price) {
-		super(airlineCode, fltNumber, duration, totalSeats, destination, destination);
+		super(airlineCode, fltNumber, duration, totalSeats, origin, destination);
 		this.departureDateTime = departureDateTime;
 		this.availableSeats = availableSeats;
 		this.price = price;
@@ -44,6 +44,13 @@ public class Flight extends Route {
 	
 	public Date getArrivalDateTime() {
 		return new Date(this.departureDateTime.getTime() + 60000 * this.duration);
+	}
+	@Override
+	public String toString() {
+		return "Flight [departureDateTime=" + departureDateTime + ", availableSeats=" + availableSeats + ", price="
+				+ price + ", airlineCode=" + airlineCode + ", fltNumber=" + fltNumber + ", duration=" + duration
+				+ ", totalSeats=" + totalSeats + ", origin=" + origin + ", destination=" + destination
+				+ ", scheduledFlights=" + scheduledFlights + "]";
 	}
 
 }

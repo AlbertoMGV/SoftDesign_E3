@@ -40,6 +40,7 @@ public class FlightSearchController {
 				result[i] = new Flight(params[0], Integer.parseInt(params[1]), Integer.parseInt(params[2]), Integer.parseInt(params[3]),
 						new Date(Long.parseLong(params[4])), Integer.parseInt(params[5]), DeustoAirDatabase.getAirport(params[6]),
 						DeustoAirDatabase.getAirport(params[7]), Integer.parseInt(params[8]));
+				System.out.println(result[i].toString());
 			}
 		}catch (Exception e) {
 			e.printStackTrace();

@@ -16,7 +16,6 @@ public class FlightsDatabase {
 		Route r = new Route("RY", 2100, 45, 150, "MAD", "BIO");
 		Route r1 = new Route("RY", 2101, 45, 150, "BIO", "MAD");
 		
-		System.out.println(r.destination);
 		
 		routes.add(r);
 		routes.add(r1);
@@ -25,7 +24,6 @@ public class FlightsDatabase {
 
 		try {
 			Flight f1 = new Flight(r, format.parse("09/01/2019"), 52);
-			System.out.println(f1.destination);
 			Flight f2 = new Flight(r, format.parse("10/01/2019"), 49);
 			Flight f3 = new Flight(r1, format.parse("09/01/2019"), 41);
 			Flight f4 = new Flight(r1, format.parse("10/01/2019"), 65);

@@ -23,6 +23,7 @@ public class DeustoAirServer {
 		try {			
 			IDeustoAirServerRemote serverRemote = new DeustoAirServerRemote();			
 			Naming.rebind(serverName, serverRemote);
+			/*
 			System.out.println("* Main DeustoAir Server now running on: '" + serverName);
 			AirportDTO bio = new AirportDTO("BIO", "Loiu Airport", "Bilbao", "Spain");
 			AirportDTO mad = new AirportDTO("MAD", "Adolfo Suarez Airport", "Madrid", "Spain");
@@ -30,7 +31,7 @@ public class DeustoAirServer {
 			SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
 			for(int i = 0; i < flts.length; i++) {
 				System.out.println(flts[i] . getFltNumber() + ": " + format.format(flts[i].getDepartureDateTime()));
-			}
+			}*/
 			//serverRemote.register("test@gmail.com", "test", "google", bio);
 			//System.out.println("login test: " + serverRemote.login("test@gmail.com", "test", "google"));
 

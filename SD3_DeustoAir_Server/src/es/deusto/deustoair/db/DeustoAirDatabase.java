@@ -8,6 +8,7 @@ import es.deusto.deustoair.server.data.Payment;
 import es.deusto.deustoair.server.data.Reservation;
 import es.deusto.deustoair.server.data.Route;
 import es.deusto.deustoair.server.data.User;
+import es.deusto.deustoair.server.data.dto.AirportDTO;
 
 public class DeustoAirDatabase {
 
@@ -24,8 +25,9 @@ public class DeustoAirDatabase {
 	private static HashMap<Integer, Payment> payments;
 	
 	static {
-		users = new HashMap<String, User>();
 		airports = new HashMap<String, Airport>();
+		airports.put("BIO",new Airport("BIO", "Loiu Airport", "Bilbao", "Spain"));
+		airports.put("MAD",new Airport("MAD", "Adolfo Suarez Airport", "Madrid", "Spain"));
 		routes = new HashMap<String, Route>();
 		flights = new HashMap<String, Flight>();
 		reservations = new HashMap<Integer, Reservation>();
@@ -56,7 +58,11 @@ public class DeustoAirDatabase {
 		return users.get(email);
 	}
 	public static Airport getAirport(String id) {
-		return airports.get(id);
+		if(airports.get(id) == null) {
+			return new Airport(id);
+		}else {
+			return airports.get(id);
+		}
 	}
 	public static Route getRoute(String code) {
 		return routes.get(code);
