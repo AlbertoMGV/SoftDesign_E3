@@ -79,7 +79,7 @@ public class RegisterWindow {
 			public void actionPerformed(ActionEvent e) {
 				AirportDTO homeAir = new AirportDTO(txairport.getText());
 				if (txpass.getText().equals(txrpass.getText())) {
-					if (controller.register(txemail.getText(),txpass.getText(),bgroup.getSelection().getActionCommand(),homeAir)) {
+					if (controller.register(txemail.getText(),txpass.getText(),bgroup.getSelection().getActionCommand().toLowerCase(),homeAir)) {
 						System.out.println("* REGISTERED");
 					} else {
 						System.out.println("* ERROR");
