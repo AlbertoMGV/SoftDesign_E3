@@ -3,6 +3,7 @@ package es.deusto.deustoair.server;
 import java.rmi.Naming;
 import java.rmi.RemoteException;
 import java.text.SimpleDateFormat;
+import java.util.List;
 
 import org.omg.PortableServer.IdUniquenessPolicyOperations;
 
@@ -37,8 +38,16 @@ public class DeustoAirServer {
 			Naming.rebind(serverName, serverRemote);
 			
 			IDeustoAirDAO dstdao = new DeustoAirDAO();
+			
+			
 			User usr = new User(8, "a@a.com", "paypal", new Airport("BIO"));
 			dstdao.storeReservation(usr);
+			User usr1 = new User(9, "b@b.com", "credit", new Airport("MAD"));
+			dstdao.storeReservation(usr1);
+			
+			List<User> usrs = dstdao.getUsers();
+			System.out.println(usrs);
+			
 			User usrReturned = dstdao.getUser("a@a.com");
 			
 			/*
