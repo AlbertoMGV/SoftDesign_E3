@@ -42,7 +42,7 @@
 	  </path>
 	
 	<target name="compile" depends="clean, prepare">
-	        <javac srcdir="${src.dir}" destdir="${build.dir}" classpathref="full.classpath" includeantruntime="no">
+	        <javac srcdir="${source.dir}" destdir="${build.dir}" classpathref="full.classpath" includeantruntime="no">
 	            <include name="**/*.java"/>
 	         </javac>
 	    </target>
