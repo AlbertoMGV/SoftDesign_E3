@@ -45,3 +45,260 @@ org.datanucleus.exceptions.NucleusException: No hay clases !
 	at org.datanucleus.store.rdbms.RDBMSStoreManager.deleteSchemaForClasses(RDBMSStoreManager.java:4330)
 	at org.datanucleus.store.schema.SchemaTool.deleteSchemaForClasses(SchemaTool.java:515)
 	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:430)
+17:21:50,744 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.11) para el API "JDO" utilisando el JRE "{2}"
+17:21:50,981 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Flight.class" con definicion enhanced
+17:21:50,995 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Route.class" con definicion enhanced
+17:21:50,999 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\User.class" con definicion enhanced
+17:21:51,000 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases.
+17:21:51,303 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+17:21:51,304 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+17:21:51,305 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-api-jdo-5.1.9.jar
+17:21:51,305 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-cache-5.1.1.jar
+17:21:51,305 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-core-5.1.11.jar
+17:21:51,305 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-rdbms-5.1.11.jar
+17:21:51,305 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\javax.jdo-3.2.0-m8.jar
+17:21:51,305 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\log4j-1.2.14.jar
+17:21:51,305 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\mysql-connector-java-8.0.12.jar
+17:21:51,305 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin
+17:21:51,305 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\resources
+17:21:52,591 (main) ERROR [DataNucleus.Datastore.Schema] - La inicialización del base de datos ha fallado.
+Unknown database 'productsdb'
+org.datanucleus.exceptions.NucleusDataStoreException: Unknown database 'productsdb'
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:518)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:290)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:660)
+	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:295)
+	at org.datanucleus.NucleusContextHelper.createStoreManagerForProperties(NucleusContextHelper.java:140)
+	at org.datanucleus.PersistenceNucleusContextImpl.initialise(PersistenceNucleusContextImpl.java:445)
+	at org.datanucleus.store.schema.SchemaTool.getNucleusContextForMode(SchemaTool.java:729)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:300)
+Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'productsdb'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:832)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:208)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:79)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:254)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:864)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:434)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:362)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:132)
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:501)
+	... 11 more
+Nested Throwables StackTrace:
+java.sql.SQLSyntaxErrorException: Unknown database 'productsdb'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:832)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:208)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:79)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:254)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:864)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:434)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:362)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:132)
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:501)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:290)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:660)
+	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:295)
+	at org.datanucleus.NucleusContextHelper.createStoreManagerForProperties(NucleusContextHelper.java:140)
+	at org.datanucleus.PersistenceNucleusContextImpl.initialise(PersistenceNucleusContextImpl.java:445)
+	at org.datanucleus.store.schema.SchemaTool.getNucleusContextForMode(SchemaTool.java:729)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:300)
+17:21:52,593 (main) ERROR [DataNucleus.Datastore] - Exception thrown creating StoreManager : Unknown database 'productsdb'
+17:21:52,593 (main) ERROR [DataNucleus.SchemaTool] - Error creating NucleusContext
+Unknown database 'productsdb'
+org.datanucleus.exceptions.NucleusDataStoreException: Unknown database 'productsdb'
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:518)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:290)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:660)
+	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:295)
+	at org.datanucleus.NucleusContextHelper.createStoreManagerForProperties(NucleusContextHelper.java:140)
+	at org.datanucleus.PersistenceNucleusContextImpl.initialise(PersistenceNucleusContextImpl.java:445)
+	at org.datanucleus.store.schema.SchemaTool.getNucleusContextForMode(SchemaTool.java:729)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:300)
+Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'productsdb'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:832)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:208)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:79)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:254)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:864)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:434)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:362)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:132)
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:501)
+	... 11 more
+Nested Throwables StackTrace:
+java.sql.SQLSyntaxErrorException: Unknown database 'productsdb'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:832)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:208)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:79)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:254)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:864)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:434)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:362)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:132)
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:501)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:290)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:660)
+	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:295)
+	at org.datanucleus.NucleusContextHelper.createStoreManagerForProperties(NucleusContextHelper.java:140)
+	at org.datanucleus.PersistenceNucleusContextImpl.initialise(PersistenceNucleusContextImpl.java:445)
+	at org.datanucleus.store.schema.SchemaTool.getNucleusContextForMode(SchemaTool.java:729)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:300)
+17:24:48,575 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.11) para el API "JDO" utilisando el JRE "{2}"
+17:24:48,792 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Flight.class" con definicion enhanced
+17:24:48,807 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Route.class" con definicion enhanced
+17:24:48,811 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\User.class" con definicion enhanced
+17:24:48,812 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases.
+17:24:49,112 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+17:24:49,112 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+17:24:49,113 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-api-jdo-5.1.9.jar
+17:24:49,113 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-cache-5.1.1.jar
+17:24:49,113 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-core-5.1.11.jar
+17:24:49,113 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-rdbms-5.1.11.jar
+17:24:49,113 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\javax.jdo-3.2.0-m8.jar
+17:24:49,113 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\log4j-1.2.14.jar
+17:24:49,113 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\mysql-connector-java-8.0.12.jar
+17:24:49,113 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin
+17:24:49,113 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\resources
+17:24:50,250 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+17:24:51,037 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+17:24:51,037 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\db\DeustoAirDatabase.class
+17:24:51,037 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\DeustoAirServer.class
+17:24:51,037 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\DeustoAirService.class
+17:24:51,037 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Airport.class
+17:24:51,037 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Flight.class
+17:24:51,037 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\FlightBooking.class
+17:24:51,037 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Payment.class
+17:24:51,037 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Reservation.class
+17:24:51,037 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Route.class
+17:24:51,037 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\User.class
+17:24:51,037 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\AirportDTO.class
+17:24:51,037 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\DataObjectAssembler.class
+17:24:51,037 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\FlightDTO.class
+17:24:51,037 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\PaymentDTO.class
+17:24:51,037 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\ReservationDTO.class
+17:24:51,037 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\UserDTO.class
+17:24:51,037 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\CreditPaymentProcessor.class
+17:24:51,038 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\FacebookLoginHelper.class
+17:24:51,038 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\FlightSearchController.class
+17:24:51,038 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\GoogleLoginHelper.class
+17:24:51,038 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\IAuthGateway.class
+17:24:51,038 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\IPaymentGateway.class
+17:24:51,038 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\LoginGatewayFactory.class
+17:24:51,038 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\PaymentGatewayFactory.class
+17:24:51,038 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\PaypalPaymentProcessor.class
+17:24:51,038 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\remote\DeustoAirServerRemote.class
+17:24:51,038 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\remote\IDeustoAirServerRemote.class
+17:24:51,038 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deustoair\dao\DeustoAirDAO.class
+17:24:51,038 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deustoair\dao\IDeustoAirDAO.class
+17:24:54,728 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+18:26:10,678 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.11) para el API "JDO" utilisando el JRE "{2}"
+18:26:11,173 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Flight.class" con definicion enhanced
+18:26:11,190 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Route.class" con definicion enhanced
+18:26:11,194 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\User.class" con definicion enhanced
+18:26:11,196 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases.
+18:26:11,651 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+18:26:11,652 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+18:26:11,652 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-api-jdo-5.1.9.jar
+18:26:11,652 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-cache-5.1.1.jar
+18:26:11,652 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-core-5.1.11.jar
+18:26:11,652 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-rdbms-5.1.11.jar
+18:26:11,652 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\javax.jdo-3.2.0-m8.jar
+18:26:11,652 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\log4j-1.2.14.jar
+18:26:11,652 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\mysql-connector-java-8.0.12.jar
+18:26:11,653 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin
+18:26:11,653 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\resources
+18:26:17,165 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+18:26:32,889 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+18:26:32,890 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\db\DeustoAirDatabase.class
+18:26:32,890 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\DeustoAirServer.class
+18:26:32,890 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\DeustoAirService.class
+18:26:32,890 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Airport.class
+18:26:32,890 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Flight.class
+18:26:32,890 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\FlightBooking.class
+18:26:32,890 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Payment.class
+18:26:32,890 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Reservation.class
+18:26:32,890 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Route.class
+18:26:32,890 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\User.class
+18:26:32,890 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\AirportDTO.class
+18:26:32,890 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\DataObjectAssembler.class
+18:26:32,890 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\FlightDTO.class
+18:26:32,890 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\PaymentDTO.class
+18:26:32,890 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\ReservationDTO.class
+18:26:32,891 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\UserDTO.class
+18:26:32,891 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\CreditPaymentProcessor.class
+18:26:32,891 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\FacebookLoginHelper.class
+18:26:32,891 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\FlightSearchController.class
+18:26:32,891 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\GoogleLoginHelper.class
+18:26:32,891 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\IAuthGateway.class
+18:26:32,891 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\IPaymentGateway.class
+18:26:32,891 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\LoginGatewayFactory.class
+18:26:32,891 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\PaymentGatewayFactory.class
+18:26:32,891 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\PaypalPaymentProcessor.class
+18:26:32,891 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\remote\DeustoAirServerRemote.class
+18:26:32,891 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\remote\IDeustoAirServerRemote.class
+18:26:32,891 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deustoair\dao\DeustoAirDAO.class
+18:26:32,891 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deustoair\dao\IDeustoAirDAO.class
+18:26:35,020 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+19:37:12,841 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+19:38:40,197 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+19:38:41,515 (main) WARN  [DataNucleus.Query] - Query for candidates of es.deusto.deustoair.server.data.User and subclasses resulted in no possible candidates : La clase "es.deusto.deustoair.server.data.User" no tiene una tabla en la base de datos, pero esta operacion la necesita. Por favor compruebe el MetaData
+19:39:57,951 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+19:39:59,220 (main) WARN  [DataNucleus.Query] - Query for candidates of es.deusto.deustoair.server.data.User and subclasses resulted in no possible candidates : La clase "es.deusto.deustoair.server.data.User" no tiene una tabla en la base de datos, pero esta operacion la necesita. Por favor compruebe el MetaData
+19:43:40,508 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+19:47:59,231 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+19:50:32,448 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+19:53:54,499 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+19:55:10,463 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+19:57:17,113 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+19:57:49,640 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+20:00:56,127 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+20:03:55,374 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+20:06:25,611 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+20:06:26,662 (main) WARN  [DataNucleus.Query] - Query for candidates of es.deusto.deustoair.server.data.User and subclasses resulted in no possible candidates : La clase "es.deusto.deustoair.server.data.User" no tiene una tabla en la base de datos, pero esta operacion la necesita. Por favor compruebe el MetaData
+20:07:43,939 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+20:07:45,811 (main) WARN  [DataNucleus.Query] - Query for candidates of es.deusto.deustoair.server.data.User and subclasses resulted in no possible candidates : La clase "es.deusto.deustoair.server.data.User" no tiene una tabla en la base de datos, pero esta operacion la necesita. Por favor compruebe el MetaData
+20:08:32,142 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+20:08:33,212 (main) WARN  [DataNucleus.Query] - Query for candidates of es.deusto.deustoair.server.data.User and subclasses resulted in no possible candidates : La clase "es.deusto.deustoair.server.data.User" no tiene una tabla en la base de datos, pero esta operacion la necesita. Por favor compruebe el MetaData

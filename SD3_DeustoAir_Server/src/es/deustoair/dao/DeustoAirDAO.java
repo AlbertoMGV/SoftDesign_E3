@@ -14,11 +14,12 @@ import es.deusto.deustoair.server.data.User;
 
 public class DeustoAirDAO implements IDeustoAirDAO{
 	private static final long serialVersionUID = 1L;
-	private PersistenceManagerFactory pmf;
+	private PersistenceManagerFactory pmf = null;
 	
 	public DeustoAirDAO() throws RemoteException{
 		
 		pmf = JDOHelper.getPersistenceManagerFactory("datanucleus.properties");
+		
 	}
 	public User getUser(String emailUser) throws RemoteException {
 		PersistenceManager pm = pmf.getPersistenceManager();
@@ -87,11 +88,14 @@ public class DeustoAirDAO implements IDeustoAirDAO{
 	private void storeObject(Object object) {
 		PersistenceManager pm = pmf.getPersistenceManager();
 	    Transaction tx = pm.currentTransaction();
-	   
+	    User usr = (User) object;
+	    
 	    try {
 	       tx.begin();
-	       System.out.println("   * Storing an User: " + object);
-	       pm.makePersistent(object);
+	       System.out.println("   * Storing an User: " + usr.getEmail());
+	       
+	       pm.makePersistent(usr);
+	       System.out.println("D1");
 	       tx.commit();
 	    } catch (Exception ex) {
 	    	System.out.println("   $ Error storing the user: " + ex.getMessage());
@@ -103,4 +107,5 @@ public class DeustoAirDAO implements IDeustoAirDAO{
     		pm.close();
 	    }
 	}
+	
 }

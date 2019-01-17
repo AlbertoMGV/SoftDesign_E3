@@ -1,19 +1,28 @@
 package es.deusto.deustoair.server.data;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
+import javax.jdo.annotations.Inheritance;
+import javax.jdo.annotations.InheritanceStrategy;
+import javax.jdo.annotations.Join;
 import javax.jdo.annotations.PersistenceCapable;
+import javax.jdo.annotations.Persistent;
 import javax.jdo.annotations.PrimaryKey;
 
-@PersistenceCapable
-public class User {	
+@PersistenceCapable(detachable = "true")
+public class User implements Serializable{	
+	
 	private int id;
 	@PrimaryKey
 	private String email;
 	private String preferredPaymentMethod;
 	private Airport defaultAirport;
+	@Persistent(defaultFetchGroup="true")
 	private ArrayList<Reservation> reservations;
 	private ArrayList<Payment> payments;
+	
+	
 	
 	public User(int id, String email,String preferredPaymentMethod, Airport defaultAirport) {
 		super();
