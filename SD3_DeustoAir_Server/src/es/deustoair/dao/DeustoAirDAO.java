@@ -1,4 +1,4 @@
-package es.deusto.deustoair.server.remote;
+package es.deustoair.dao;
 
 import java.rmi.RemoteException;
 
@@ -12,7 +12,7 @@ import javax.jdo.Transaction;
 import es.deusto.deustoair.server.data.Flight;
 import es.deusto.deustoair.server.data.User;
 
-public class DeustoAirDAO implements IDeustoAirDao{
+public class DeustoAirDAO implements IDeustoAirDAO{
 	private static final long serialVersionUID = 1L;
 	private PersistenceManagerFactory pmf;
 	
