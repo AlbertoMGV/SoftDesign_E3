@@ -7,7 +7,6 @@
 	<property name="lib.dir" location="lib"/>
 	<property name="resources.dir" location="resources"/>
 	<property name="dist.dir" location="dist"/>
-	<property name="dist.dir" location="dist"/>
 	<property name="classpath" location="bin"/>
 	<property name="server.port" value="1099"/> 
 	<property name="server.IP" value="127.0.0.1"/> 
@@ -81,7 +80,7 @@
 	    </target>	
 		
 	    <!-- TARGET : Run -->	
-		<target name="run" depends="createschema">
+		<target name="run" depends="createschema" >
 	        <java classname="es.deusto.ingenieria.sd.datanucleus.jdo.DAOTest_Copies" classpathref="full.classpath" fork="true">
 	        	<jvmarg value="-Dlog4j.configuration=log4j.properties"/>
 			</java>
@@ -90,17 +89,17 @@
     <target name="build" description="Builds the project">
     	<delete dir="${build.dir}"/>
     	<mkdir dir="${build.dir}"/>
-    	<javac srcdir="${source.dir}" destdir="${build.dir}" classpath="${classpath}" deprecation="true" fork="true" includeantruntime="no"/>
+    	<javac srcdir="${source.dir}" destdir="${build.dir}" classpath="${classpath}" classpathref="full.classpath" deprecation="true" fork="true" includeantruntime="no"/>
     </target>
 	
 	<target name="export" depends="build" description="Export the project into a .jar file">
 		<delete dir="${dist.dir}"/>
 		<mkdir dir="${dist.dir}"/>
-		<jar destfile="${dist.dir}/${export.file}" basedir="${build.dir}" includes="**/ID**.class, **/**DTO.class"/>
+		<jar destfile="${dist.dir}/${export.file}" basedir="${build.dir}" classpathref="full.classpath" includes="**/ID**.class, **/**DTO.class"/>
 	</target>	
 	
 	<target name="server" depends="build" description="Runs Server program">
-		<java classname="es.deusto.deustoair.server.DeustoAirServer" classpath="${classpath}" fork="true">
+		<java classname="es.deusto.deustoair.server.DeustoAirServer" classpath="${classpath}" classpathref="full.classpath" fork="true">
 	        <jvmarg value="-Djava.rmi.server.codebase=file:${build.dir}/"/>
 			<jvmarg value="-Djava.security.policy=${policy.file}"/>
 			<jvmarg value="-Dlog4j.configuration=log4j.properties"/>

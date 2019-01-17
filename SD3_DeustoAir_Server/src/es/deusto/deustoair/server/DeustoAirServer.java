@@ -3,6 +3,7 @@ package es.deusto.deustoair.server;
 import java.rmi.Naming;
 import java.text.SimpleDateFormat;
 
+import es.deusto.deustoair.server.data.User;
 import es.deusto.deustoair.server.data.dto.AirportDTO;
 import es.deusto.deustoair.server.data.dto.FlightDTO;
 import es.deusto.deustoair.server.remote.DeustoAirServerRemote;
