@@ -1,5 +1,8 @@
 package es.deusto.deustoair.server.data;
 
+import javax.jdo.annotations.PersistenceCapable;
+
+@PersistenceCapable
 public class FlightBooking {
 	
 	private Flight flight;

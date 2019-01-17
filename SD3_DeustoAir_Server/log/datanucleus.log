@@ -2587,3 +2587,289 @@ org.datanucleus.exceptions.NucleusUserException: Clase "es.deusto.deustoair.serv
 23:34:26,879 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deustoair\dao\IDeustoAirDAO.class
 23:34:26,962 (main) WARN  [DataNucleus.MetaData] - Clase "es.deusto.deustoair.server.data.Reservation" campo "bookedFlights" es una matriz de (non-serializado) elementos de tipo "es.deusto.deustoair.server.data.FlightBooking" pero no tiene ningun <join>. Para almacenar una matriz asi necesita una tabla de juntar, o marcarlo como "serialized".
 23:34:27,114 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+23:34:30,266 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+23:34:31,494 (main) WARN  [DataNucleus.MetaData] - Clase "es.deusto.deustoair.server.data.Reservation" campo "bookedFlights" es una matriz de (non-serializado) elementos de tipo "es.deusto.deustoair.server.data.FlightBooking" pero no tiene ningun <join>. Para almacenar una matriz asi necesita una tabla de juntar, o marcarlo como "serialized".
+23:34:31,515 (main) WARN  [DataNucleus.Query] - Query for candidates of es.deusto.deustoair.server.data.User and subclasses resulted in no possible candidates : La clase "es.deusto.deustoair.server.data.User" no tiene una tabla en la base de datos, pero esta operacion la necesita. Por favor compruebe el MetaData
+23:42:32,071 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.11) para el API "JDO" utilisando el JRE "{2}"
+23:42:32,191 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Airport.class" con definicion enhanced
+23:42:32,194 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Flight.class" con definicion enhanced
+23:42:32,197 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Payment.class" con definicion enhanced
+23:42:32,200 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Reservation.class" con definicion enhanced
+23:42:32,205 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Route.class" con definicion enhanced
+23:42:32,216 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\User.class" con definicion enhanced
+23:42:32,217 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 6 clases.
+23:42:45,161 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.11) para el API "JDO" utilisando el JRE "{2}"
+23:42:45,291 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Airport.class" con definicion enhanced
+23:42:45,294 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Flight.class" con definicion enhanced
+23:42:45,297 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Payment.class" con definicion enhanced
+23:42:45,300 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Reservation.class" con definicion enhanced
+23:42:45,304 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Route.class" con definicion enhanced
+23:42:45,315 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\User.class" con definicion enhanced
+23:42:45,315 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 6 clases.
+23:42:45,580 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+23:42:45,580 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+23:42:45,580 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-api-jdo-5.1.9.jar
+23:42:45,580 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-cache-5.1.1.jar
+23:42:45,580 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-core-5.1.11.jar
+23:42:45,580 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-rdbms-5.1.11.jar
+23:42:45,581 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\javax.jdo-3.2.0-m8.jar
+23:42:45,581 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\log4j-1.2.14.jar
+23:42:45,581 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\mysql-connector-java-8.0.12.jar
+23:42:45,581 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin
+23:42:45,581 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\resources
+23:42:46,371 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+23:42:49,005 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+23:42:49,005 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\db\DeustoAirDatabase.class
+23:42:49,005 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\DeustoAirServer.class
+23:42:49,005 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\DeustoAirService.class
+23:42:49,005 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Airport.class
+23:42:49,005 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Flight.class
+23:42:49,005 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\FlightBooking.class
+23:42:49,005 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Payment.class
+23:42:49,005 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Reservation.class
+23:42:49,005 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Route.class
+23:42:49,005 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\User.class
+23:42:49,005 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\AirportDTO.class
+23:42:49,006 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\DataObjectAssembler.class
+23:42:49,006 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\FlightDTO.class
+23:42:49,006 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\PaymentDTO.class
+23:42:49,006 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\ReservationDTO.class
+23:42:49,006 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\UserDTO.class
+23:42:49,006 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\CreditPaymentProcessor.class
+23:42:49,006 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\FacebookLoginHelper.class
+23:42:49,006 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\FlightSearchController.class
+23:42:49,006 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\GoogleLoginHelper.class
+23:42:49,006 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\IAuthGateway.class
+23:42:49,006 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\IPaymentGateway.class
+23:42:49,006 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\LoginGatewayFactory.class
+23:42:49,006 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\PaymentGatewayFactory.class
+23:42:49,006 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\PaypalPaymentProcessor.class
+23:42:49,006 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\remote\DeustoAirServerRemote.class
+23:42:49,006 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\remote\IDeustoAirServerRemote.class
+23:42:49,006 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deustoair\dao\DeustoAirDAO.class
+23:42:49,006 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deustoair\dao\IDeustoAirDAO.class
+23:42:49,090 (main) WARN  [DataNucleus.MetaData] - Clase "es.deusto.deustoair.server.data.Reservation" campo "bookedFlights" es una matriz de (non-serializado) elementos de tipo "es.deusto.deustoair.server.data.FlightBooking" pero no tiene ningun <join>. Para almacenar una matriz asi necesita una tabla de juntar, o marcarlo como "serialized".
+23:42:49,243 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+23:42:57,438 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.11) para el API "JDO" utilisando el JRE "{2}"
+23:42:57,557 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Airport.class" con definicion enhanced
+23:42:57,560 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Flight.class" con definicion enhanced
+23:42:57,563 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Payment.class" con definicion enhanced
+23:42:57,566 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Reservation.class" con definicion enhanced
+23:42:57,570 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Route.class" con definicion enhanced
+23:42:57,582 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\User.class" con definicion enhanced
+23:42:57,582 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 6 clases.
+23:42:57,825 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+23:42:57,825 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+23:42:57,825 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-api-jdo-5.1.9.jar
+23:42:57,826 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-cache-5.1.1.jar
+23:42:57,826 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-core-5.1.11.jar
+23:42:57,826 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-rdbms-5.1.11.jar
+23:42:57,826 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\javax.jdo-3.2.0-m8.jar
+23:42:57,826 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\log4j-1.2.14.jar
+23:42:57,826 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\mysql-connector-java-8.0.12.jar
+23:42:57,826 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin
+23:42:57,826 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\resources
+23:42:58,613 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+23:43:00,629 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+23:43:00,629 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\db\DeustoAirDatabase.class
+23:43:00,629 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\DeustoAirServer.class
+23:43:00,629 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\DeustoAirService.class
+23:43:00,629 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Airport.class
+23:43:00,629 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Flight.class
+23:43:00,629 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\FlightBooking.class
+23:43:00,629 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Payment.class
+23:43:00,629 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Reservation.class
+23:43:00,629 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Route.class
+23:43:00,629 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\User.class
+23:43:00,629 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\AirportDTO.class
+23:43:00,629 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\DataObjectAssembler.class
+23:43:00,630 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\FlightDTO.class
+23:43:00,630 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\PaymentDTO.class
+23:43:00,630 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\ReservationDTO.class
+23:43:00,630 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\UserDTO.class
+23:43:00,630 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\CreditPaymentProcessor.class
+23:43:00,630 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\FacebookLoginHelper.class
+23:43:00,630 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\FlightSearchController.class
+23:43:00,630 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\GoogleLoginHelper.class
+23:43:00,630 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\IAuthGateway.class
+23:43:00,630 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\IPaymentGateway.class
+23:43:00,630 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\LoginGatewayFactory.class
+23:43:00,630 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\PaymentGatewayFactory.class
+23:43:00,630 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\PaypalPaymentProcessor.class
+23:43:00,630 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\remote\DeustoAirServerRemote.class
+23:43:00,630 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\remote\IDeustoAirServerRemote.class
+23:43:00,630 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deustoair\dao\DeustoAirDAO.class
+23:43:00,630 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deustoair\dao\IDeustoAirDAO.class
+23:43:00,718 (main) WARN  [DataNucleus.MetaData] - Clase "es.deusto.deustoair.server.data.Reservation" campo "bookedFlights" es una matriz de (non-serializado) elementos de tipo "es.deusto.deustoair.server.data.FlightBooking" pero no tiene ningun <join>. Para almacenar una matriz asi necesita una tabla de juntar, o marcarlo como "serialized".
+23:43:00,874 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+23:43:03,706 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+23:43:08,002 (main) WARN  [DataNucleus.MetaData] - Clase "es.deusto.deustoair.server.data.Reservation" campo "bookedFlights" es una matriz de (non-serializado) elementos de tipo "es.deusto.deustoair.server.data.FlightBooking" pero no tiene ningun <join>. Para almacenar una matriz asi necesita una tabla de juntar, o marcarlo como "serialized".
+23:43:08,021 (main) WARN  [DataNucleus.Query] - Query for candidates of es.deusto.deustoair.server.data.User and subclasses resulted in no possible candidates : La clase "es.deusto.deustoair.server.data.User" no tiene una tabla en la base de datos, pero esta operacion la necesita. Por favor compruebe el MetaData
+23:48:40,469 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.11) para el API "JDO" utilisando el JRE "{2}"
+23:48:40,592 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Airport.class" con definicion enhanced
+23:48:40,595 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Flight.class" con definicion enhanced
+23:48:40,599 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Payment.class" con definicion enhanced
+23:48:40,602 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Reservation.class" con definicion enhanced
+23:48:40,604 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Route.class" con definicion enhanced
+23:48:40,608 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\User.class" con definicion enhanced
+23:48:40,608 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 6 clases.
+23:48:40,845 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+23:48:40,845 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+23:48:40,845 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-api-jdo-5.1.9.jar
+23:48:40,846 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-cache-5.1.1.jar
+23:48:40,846 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-core-5.1.11.jar
+23:48:40,846 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-rdbms-5.1.11.jar
+23:48:40,846 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\javax.jdo-3.2.0-m8.jar
+23:48:40,846 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\log4j-1.2.14.jar
+23:48:40,846 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\mysql-connector-java-8.0.12.jar
+23:48:40,846 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin
+23:48:40,846 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\resources
+23:48:41,634 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+23:48:43,826 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+23:48:43,826 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\db\DeustoAirDatabase.class
+23:48:43,826 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\DeustoAirServer.class
+23:48:43,826 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\DeustoAirService.class
+23:48:43,826 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Airport.class
+23:48:43,826 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Flight.class
+23:48:43,826 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\FlightBooking.class
+23:48:43,826 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Payment.class
+23:48:43,826 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Reservation.class
+23:48:43,826 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Route.class
+23:48:43,826 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\User.class
+23:48:43,826 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\AirportDTO.class
+23:48:43,826 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\DataObjectAssembler.class
+23:48:43,826 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\FlightDTO.class
+23:48:43,827 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\PaymentDTO.class
+23:48:43,827 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\ReservationDTO.class
+23:48:43,827 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\UserDTO.class
+23:48:43,827 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\CreditPaymentProcessor.class
+23:48:43,827 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\FacebookLoginHelper.class
+23:48:43,827 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\FlightSearchController.class
+23:48:43,827 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\GoogleLoginHelper.class
+23:48:43,827 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\IAuthGateway.class
+23:48:43,827 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\IPaymentGateway.class
+23:48:43,827 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\LoginGatewayFactory.class
+23:48:43,827 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\PaymentGatewayFactory.class
+23:48:43,827 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\PaypalPaymentProcessor.class
+23:48:43,827 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\remote\DeustoAirServerRemote.class
+23:48:43,827 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\remote\IDeustoAirServerRemote.class
+23:48:43,827 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deustoair\dao\DeustoAirDAO.class
+23:48:43,827 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deustoair\dao\IDeustoAirDAO.class
+23:48:43,910 (main) WARN  [DataNucleus.MetaData] - Clase "es.deusto.deustoair.server.data.Reservation" campo "bookedFlights" es una matriz de (non-serializado) elementos de tipo "es.deusto.deustoair.server.data.FlightBooking" pero no tiene ningun <join>. Para almacenar una matriz asi necesita una tabla de juntar, o marcarlo como "serialized".
+23:48:44,060 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+23:48:47,554 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+23:48:48,645 (main) WARN  [DataNucleus.MetaData] - Clase "es.deusto.deustoair.server.data.Reservation" campo "bookedFlights" es una matriz de (non-serializado) elementos de tipo "es.deusto.deustoair.server.data.FlightBooking" pero no tiene ningun <join>. Para almacenar una matriz asi necesita una tabla de juntar, o marcarlo como "serialized".
+23:48:48,666 (main) WARN  [DataNucleus.Query] - Query for candidates of es.deusto.deustoair.server.data.User and subclasses resulted in no possible candidates : La clase "es.deusto.deustoair.server.data.User" no tiene una tabla en la base de datos, pero esta operacion la necesita. Por favor compruebe el MetaData
+23:50:17,333 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.11) para el API "JDO" utilisando el JRE "{2}"
+23:50:17,461 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Airport.class" con definicion enhanced
+23:50:17,463 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Flight.class" con definicion enhanced
+23:50:17,466 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\FlightBooking.class" con definicion enhanced
+23:50:17,469 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Payment.class" con definicion enhanced
+23:50:17,471 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Reservation.class" con definicion enhanced
+23:50:17,476 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Route.class" con definicion enhanced
+23:50:17,478 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\User.class" con definicion enhanced
+23:50:17,479 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 7 clases.
+23:50:17,727 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+23:50:17,728 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+23:50:17,728 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-api-jdo-5.1.9.jar
+23:50:17,728 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-cache-5.1.1.jar
+23:50:17,728 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-core-5.1.11.jar
+23:50:17,728 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-rdbms-5.1.11.jar
+23:50:17,728 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\javax.jdo-3.2.0-m8.jar
+23:50:17,728 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\log4j-1.2.14.jar
+23:50:17,728 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\mysql-connector-java-8.0.12.jar
+23:50:17,728 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin
+23:50:17,728 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\resources
+23:50:18,517 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+23:50:19,949 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+23:50:19,950 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\db\DeustoAirDatabase.class
+23:50:19,950 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\DeustoAirServer.class
+23:50:19,950 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\DeustoAirService.class
+23:50:19,950 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Airport.class
+23:50:19,950 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Flight.class
+23:50:19,950 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\FlightBooking.class
+23:50:19,950 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Payment.class
+23:50:19,950 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Reservation.class
+23:50:19,950 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Route.class
+23:50:19,950 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\User.class
+23:50:19,950 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\AirportDTO.class
+23:50:19,950 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\DataObjectAssembler.class
+23:50:19,950 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\FlightDTO.class
+23:50:19,950 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\PaymentDTO.class
+23:50:19,950 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\ReservationDTO.class
+23:50:19,950 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\UserDTO.class
+23:50:19,950 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\CreditPaymentProcessor.class
+23:50:19,950 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\FacebookLoginHelper.class
+23:50:19,950 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\FlightSearchController.class
+23:50:19,950 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\GoogleLoginHelper.class
+23:50:19,950 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\IAuthGateway.class
+23:50:19,950 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\IPaymentGateway.class
+23:50:19,951 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\LoginGatewayFactory.class
+23:50:19,951 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\PaymentGatewayFactory.class
+23:50:19,951 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\PaypalPaymentProcessor.class
+23:50:19,951 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\remote\DeustoAirServerRemote.class
+23:50:19,951 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\remote\IDeustoAirServerRemote.class
+23:50:19,951 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deustoair\dao\DeustoAirDAO.class
+23:50:19,951 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deustoair\dao\IDeustoAirDAO.class
+23:50:20,032 (main) WARN  [DataNucleus.MetaData] - Clase "es.deusto.deustoair.server.data.FlightBooking" campo "seats" es una matriz de (non-serializado) elementos de tipo "java.lang.String" pero no tiene ningun <join>. Para almacenar una matriz asi necesita una tabla de juntar, o marcarlo como "serialized".
+23:50:20,032 (main) WARN  [DataNucleus.MetaData] - Clase "es.deusto.deustoair.server.data.FlightBooking" campo "travellers" es una matriz de (non-serializado) elementos de tipo "java.lang.String" pero no tiene ningun <join>. Para almacenar una matriz asi necesita una tabla de juntar, o marcarlo como "serialized".
+23:50:22,628 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+23:50:25,449 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+23:50:26,760 (main) WARN  [DataNucleus.MetaData] - Clase "es.deusto.deustoair.server.data.FlightBooking" campo "seats" es una matriz de (non-serializado) elementos de tipo "java.lang.String" pero no tiene ningun <join>. Para almacenar una matriz asi necesita una tabla de juntar, o marcarlo como "serialized".
+23:50:26,760 (main) WARN  [DataNucleus.MetaData] - Clase "es.deusto.deustoair.server.data.FlightBooking" campo "travellers" es una matriz de (non-serializado) elementos de tipo "java.lang.String" pero no tiene ningun <join>. Para almacenar una matriz asi necesita una tabla de juntar, o marcarlo como "serialized".
+23:50:26,762 (main) WARN  [DataNucleus.MetaData] - Clase "es.deusto.deustoair.server.data.Reservation" campo "bookedFlights" es una matriz de (non-serializado) elementos de tipo "es.deusto.deustoair.server.data.FlightBooking" pero no tiene ningun <join>. Para almacenar una matriz asi necesita una tabla de juntar, o marcarlo como "serialized".
+23:50:26,787 (main) WARN  [DataNucleus.Query] - Query for candidates of es.deusto.deustoair.server.data.User and subclasses resulted in no possible candidates : La clase "es.deusto.deustoair.server.data.User" no tiene una tabla en la base de datos, pero esta operacion la necesita. Por favor compruebe el MetaData
+23:52:32,793 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.11) para el API "JDO" utilisando el JRE "{2}"
+23:52:32,914 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Airport.class" con definicion enhanced
+23:52:32,917 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Flight.class" con definicion enhanced
+23:52:32,919 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\FlightBooking.class" con definicion enhanced
+23:52:32,922 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Payment.class" con definicion enhanced
+23:52:32,925 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Reservation.class" con definicion enhanced
+23:52:32,928 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Route.class" con definicion enhanced
+23:52:32,931 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\User.class" con definicion enhanced
+23:52:32,931 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 7 clases.
+23:52:33,172 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+23:52:33,173 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+23:52:33,173 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-api-jdo-5.1.9.jar
+23:52:33,173 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-cache-5.1.1.jar
+23:52:33,173 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-core-5.1.11.jar
+23:52:33,173 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-rdbms-5.1.11.jar
+23:52:33,173 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\javax.jdo-3.2.0-m8.jar
+23:52:33,173 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\log4j-1.2.14.jar
+23:52:33,173 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\mysql-connector-java-8.0.12.jar
+23:52:33,173 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin
+23:52:33,173 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\resources
+23:52:33,955 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+23:52:35,294 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+23:52:35,294 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\db\DeustoAirDatabase.class
+23:52:35,294 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\DeustoAirServer.class
+23:52:35,294 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\DeustoAirService.class
+23:52:35,294 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Airport.class
+23:52:35,294 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Flight.class
+23:52:35,294 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\FlightBooking.class
+23:52:35,294 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Payment.class
+23:52:35,294 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Reservation.class
+23:52:35,294 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Route.class
+23:52:35,294 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\User.class
+23:52:35,294 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\AirportDTO.class
+23:52:35,294 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\DataObjectAssembler.class
+23:52:35,295 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\FlightDTO.class
+23:52:35,295 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\PaymentDTO.class
+23:52:35,295 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\ReservationDTO.class
+23:52:35,295 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\UserDTO.class
+23:52:35,295 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\CreditPaymentProcessor.class
+23:52:35,295 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\FacebookLoginHelper.class
+23:52:35,295 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\FlightSearchController.class
+23:52:35,295 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\GoogleLoginHelper.class
+23:52:35,295 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\IAuthGateway.class
+23:52:35,295 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\IPaymentGateway.class
+23:52:35,295 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\LoginGatewayFactory.class
+23:52:35,295 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\PaymentGatewayFactory.class
+23:52:35,295 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\PaypalPaymentProcessor.class
+23:52:35,295 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\remote\DeustoAirServerRemote.class
+23:52:35,295 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\remote\IDeustoAirServerRemote.class
+23:52:35,295 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deustoair\dao\DeustoAirDAO.class
+23:52:35,295 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deustoair\dao\IDeustoAirDAO.class
+23:52:35,377 (main) WARN  [DataNucleus.MetaData] - Clase "es.deusto.deustoair.server.data.FlightBooking" campo "seats" es una matriz de (non-serializado) elementos de tipo "java.lang.String" pero no tiene ningun <join>. Para almacenar una matriz asi necesita una tabla de juntar, o marcarlo como "serialized".
+23:52:35,377 (main) WARN  [DataNucleus.MetaData] - Clase "es.deusto.deustoair.server.data.FlightBooking" campo "travellers" es una matriz de (non-serializado) elementos de tipo "java.lang.String" pero no tiene ningun <join>. Para almacenar una matriz asi necesita una tabla de juntar, o marcarlo como "serialized".
+23:52:35,717 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
