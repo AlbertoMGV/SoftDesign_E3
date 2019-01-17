@@ -4,6 +4,7 @@ import java.rmi.Remote;
 import java.rmi.RemoteException;
 import java.util.List;
 
+import es.deusto.deustoair.server.data.Airport;
 import es.deusto.deustoair.server.data.Flight;
 import es.deusto.deustoair.server.data.User;
 

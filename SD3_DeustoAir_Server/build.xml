@@ -79,14 +79,14 @@
 	        </schematool>
 	    </target>	
 		
-	    <!-- TARGET : Run -->	
+	    <!-- TARGET : Run 	
 		<target name="run" depends="createschema" >
 	        <java classname="es.deusto.ingenieria.sd.datanucleus.jdo.DAOTest_Copies" classpathref="full.classpath" fork="true">
 	        	<jvmarg value="-Dlog4j.configuration=log4j.properties"/>
 			</java>
-	    </target>
+	    </target>-->
 	
-    <target name="build" description="Builds the project">
+    <target name="build" depends = "createschema" description="Builds the project">
     	<delete dir="${build.dir}"/>
     	<mkdir dir="${build.dir}"/>
     	<javac srcdir="${source.dir}" destdir="${build.dir}" classpath="${classpath}" classpathref="full.classpath" deprecation="true" fork="true" includeantruntime="no"/>

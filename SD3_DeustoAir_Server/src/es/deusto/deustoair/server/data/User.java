@@ -18,8 +18,9 @@ public class User implements Serializable{
 	private String email;
 	private String preferredPaymentMethod;
 	private Airport defaultAirport;
-	@Persistent(defaultFetchGroup="true")
+	@Persistent(mappedBy="bookedBy")
 	private ArrayList<Reservation> reservations;
+	@Persistent(mappedBy="paidBy")
 	private ArrayList<Payment> payments;
 	
 	

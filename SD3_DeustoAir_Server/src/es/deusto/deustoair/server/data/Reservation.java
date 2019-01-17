@@ -2,12 +2,18 @@ package es.deusto.deustoair.server.data;
 
 import java.util.Date;
 
+import javax.jdo.annotations.PersistenceCapable;
+import javax.jdo.annotations.Persistent;
+import javax.jdo.annotations.PrimaryKey;
+
+@PersistenceCapable
 public class Reservation {
-	
+	@PrimaryKey
 	private int id;
 	private Date date;
 	private int price;
 	private int airlineComission;
+	@Persistent
 	private FlightBooking[] bookedFlights;
 	private User bookedBy;
 	private Payment payment;

@@ -2,11 +2,15 @@ package es.deusto.deustoair.server.data;
 
 import java.util.Date;
 
+import javax.jdo.annotations.PersistenceCapable;
+import javax.jdo.annotations.PrimaryKey;
+@PersistenceCapable
 public class Payment {
-	
+	@PrimaryKey
 	private int id;
 	private Date date;
 	private String paymentMethod;
+	private User paidBy;
 	private Reservation paidReservation;
 	
 	public Payment(int id, Date date, String paymentCode, String paymentMethod, Reservation paidReservation) {
@@ -14,6 +18,7 @@ public class Payment {
 		this.date = date;
 		this.paymentMethod = paymentMethod;
 		this.paidReservation = paidReservation;
+		this.paidBy = paidReservation.getBookedBy();
 	}
 
 	public int getId() {

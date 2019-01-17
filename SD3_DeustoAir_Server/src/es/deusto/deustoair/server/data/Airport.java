@@ -1,7 +1,12 @@
 package es.deusto.deustoair.server.data;
 
+import javax.jdo.annotations.PersistenceCapable;
+import javax.jdo.annotations.PrimaryKey;
+
+@PersistenceCapable
 public class Airport {
 
+	@PrimaryKey
 	private String code;
 	private String name;
 	private String city;
