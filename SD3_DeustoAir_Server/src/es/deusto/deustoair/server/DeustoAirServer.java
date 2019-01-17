@@ -3,12 +3,15 @@ package es.deusto.deustoair.server;
 import java.rmi.Naming;
 import java.rmi.RemoteException;
 import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 import org.omg.PortableServer.IdUniquenessPolicyOperations;
 
 import es.deusto.deustoair.server.data.Airport;
 import es.deusto.deustoair.server.data.Flight;
+import es.deusto.deustoair.server.data.FlightBooking;
+import es.deusto.deustoair.server.data.Reservation;
 import es.deusto.deustoair.server.data.User;
 import es.deusto.deustoair.server.data.dto.AirportDTO;
 import es.deusto.deustoair.server.data.dto.FlightDTO;
@@ -20,6 +23,7 @@ import es.deustoair.dao.IDeustoAirDAO;
 
 public class DeustoAirServer {
 	
+
 	public static void main(String[] args) {
 
 		if (System.getSecurityManager() == null) {
@@ -37,18 +41,50 @@ public class DeustoAirServer {
 			IDeustoAirServerRemote serverRemote = new DeustoAirServerRemote(service);			
 			Naming.rebind(serverName, serverRemote);
 			
+			System.out.println("* Server is now running: "+serverName);
+			
+			System.out.println("---------------------");			
 			IDeustoAirDAO dstdao = new DeustoAirDAO();
 			
+			System.out.println("* Creating 3 Users...");
 			
-			User usr = new User(8, "a@a.com", "paypal", new Airport("BIO"));
+			User usr = new User(0, "pedro@deusto.es", "paypal", new Airport("BIO"));
+			User usr1 = new User(1, "luis@deusto.es", "credit", new Airport("MAD"));
+			User usr2 = new User(2, "juan@deusto.es", "credit", new Airport("BIO"));
+			
+			System.out.println("* Creating 4 Reservations...");
+			
+			FlightBooking[] bookedFlights = null;
+			Reservation r1 = new Reservation(0, new Date(02/12/19), 21, bookedFlights, usr, 100);
+			Reservation r2 = new Reservation(0, new Date(15/7/19), 12, bookedFlights, usr1, 52);
+			Reservation r3 = new Reservation(0, new Date(21/1/19), 52, bookedFlights, usr2, 65);
+			Reservation r4 = new Reservation(0, new Date(10/2/19), 10, bookedFlights, usr2, 210);
+			
+			System.out.println("* Adding to users...");
+			
+			usr.addReservation(r1);
+			usr1.addReservation(r2);
+			usr2.addReservation(r3);
+			usr2.addReservation(r4);
+			
+			System.out.println("* Storing 3 Users..");
+			
 			dstdao.storeReservation(usr);
-			User usr1 = new User(9, "b@b.com", "credit", new Airport("MAD"));
 			dstdao.storeReservation(usr1);
+			dstdao.storeReservation(usr2);
+			
+			System.out.println("* Getting all the users from the DB..");
 			
 			List<User> usrs = dstdao.getUsers();
-			System.out.println(usrs);
-			
-			User usrReturned = dstdao.getUser("a@a.com");
+			System.out.println("");
+			System.out.println(" * List of Clients and Reservations");
+			for (User user : usrs) {
+				System.out.println("Client ID: "+user.getId()+" Client email: "+user.getEmail()+" Client Airport: "+user.getDefaultAirport()+" Client PayMethod: "+user.getPreferredPaymentMethod());
+				System.out.println("Reservations");
+				for (Reservation rvs : user.getReservations()) {
+					System.out.println("ID:"+rvs.getId()+" Price:"+rvs.getPrice()+" UserEmail: "+rvs.getBookedBy().getEmail());
+				}
+			}
 			
 			/*
 			System.out.println("* Main DeustoAir Server now running on: '" + serverName);
