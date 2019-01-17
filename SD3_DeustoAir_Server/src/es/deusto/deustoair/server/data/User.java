@@ -2,9 +2,13 @@ package es.deusto.deustoair.server.data;
 
 import java.util.ArrayList;
 
-public class User {
-	
+import javax.jdo.annotations.PersistenceCapable;
+import javax.jdo.annotations.PrimaryKey;
+
+@PersistenceCapable
+public class User {	
 	private int id;
+	@PrimaryKey
 	private String email;
 	private String preferredPaymentMethod;
 	private Airport defaultAirport;

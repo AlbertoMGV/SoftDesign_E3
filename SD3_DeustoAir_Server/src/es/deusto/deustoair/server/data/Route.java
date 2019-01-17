@@ -3,6 +3,13 @@ package es.deusto.deustoair.server.data;
 import java.util.ArrayList;
 import java.util.Date;
 
+import javax.jdo.annotations.Inheritance;
+import javax.jdo.annotations.InheritanceStrategy;
+import javax.jdo.annotations.PersistenceCapable;
+
+@PersistenceCapable
+@Inheritance(strategy=InheritanceStrategy.NEW_TABLE)
+
 public class Route {
 	
 	protected String airlineCode;
