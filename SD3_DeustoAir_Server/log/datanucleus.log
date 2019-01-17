@@ -1,0 +1,47 @@
+15:53:20,929 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Eliminación del esquema para clases
+15:53:20,931 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+15:53:20,931 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-api-jdo-5.1.9.jar
+15:53:20,931 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-cache-5.1.1.jar
+15:53:20,931 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-core-5.1.11.jar
+15:53:20,932 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-rdbms-5.1.11.jar
+15:53:20,932 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\javax.jdo-3.2.0-m8.jar
+15:53:20,932 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\log4j-1.2.14.jar
+15:53:20,932 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\mysql-connector-java-8.0.12.jar
+15:53:20,932 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin
+15:53:20,932 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\resources
+15:53:28,037 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+15:53:30,387 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+15:53:30,387 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\db\DeustoAirDatabase.class
+15:53:30,387 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\DeustoAirServer.class
+15:53:30,387 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\DeustoAirService.class
+15:53:30,387 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Airport.class
+15:53:30,387 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Flight.class
+15:53:30,387 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\FlightBooking.class
+15:53:30,387 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Payment.class
+15:53:30,388 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Reservation.class
+15:53:30,388 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Route.class
+15:53:30,388 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\User.class
+15:53:30,388 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\AirportDTO.class
+15:53:30,388 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\DataObjectAssembler.class
+15:53:30,388 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\FlightDTO.class
+15:53:30,388 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\PaymentDTO.class
+15:53:30,388 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\ReservationDTO.class
+15:53:30,388 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\UserDTO.class
+15:53:30,388 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\CreditPaymentProcessor.class
+15:53:30,388 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\FacebookLoginHelper.class
+15:53:30,388 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\FlightSearchController.class
+15:53:30,388 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\GoogleLoginHelper.class
+15:53:30,388 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\IAuthGateway.class
+15:53:30,388 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\IPaymentGateway.class
+15:53:30,388 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\LoginGatewayFactory.class
+15:53:30,388 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\PaymentGatewayFactory.class
+15:53:30,388 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\PaypalPaymentProcessor.class
+15:53:30,388 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\remote\DeustoAirServerRemote.class
+15:53:30,389 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\SoftLabs\workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\remote\IDeustoAirServerRemote.class
+15:53:30,467 (main) ERROR [DataNucleus.Datastore.Schema] - No hay clases !
+15:53:30,468 (main) ERROR [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha lanzado una excepción. Por favor consulte el Log para ver más detalles: No hay clases !
+No hay clases !
+org.datanucleus.exceptions.NucleusException: No hay clases !
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.deleteSchemaForClasses(RDBMSStoreManager.java:4330)
+	at org.datanucleus.store.schema.SchemaTool.deleteSchemaForClasses(SchemaTool.java:515)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:430)
