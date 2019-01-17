@@ -30,7 +30,7 @@ public class User {
 		this.id = id;
 		this.email = email;
 		this.reservations = new ArrayList<Reservation>();
-		this.payments = new ArrayList<Payments>();
+		this.payments = new ArrayList<Payment>();
 		this.preferredPaymentMethod = preferredPaymentMethod;
 		this.defaultAirport = defaultAirport;
 	}
