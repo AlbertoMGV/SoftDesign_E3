@@ -11,7 +11,6 @@ import javax.jdo.annotations.PrimaryKey;
 @Inheritance(strategy=InheritanceStrategy.NEW_TABLE)
 public class Flight extends Route {
 	
-	@PrimaryKey
 	private Date departureDateTime;
 	private int availableSeats;
 	private int price;
