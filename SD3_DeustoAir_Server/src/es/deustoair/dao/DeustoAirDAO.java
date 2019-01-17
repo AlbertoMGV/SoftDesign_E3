@@ -120,7 +120,7 @@ public class DeustoAirDAO implements IDeustoAirDAO{
 		List<User> users = new ArrayList<>();
 		
 		try {
-			System.out.println("   * Retrieving an Extent for Products.");
+			
 			
 			tx.begin();			
 			Extent<User> extent = pm.getExtent(User.class, true);
