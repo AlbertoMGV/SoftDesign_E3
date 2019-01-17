@@ -2873,3 +2873,847 @@ org.datanucleus.exceptions.NucleusUserException: Clase "es.deusto.deustoair.serv
 23:52:35,377 (main) WARN  [DataNucleus.MetaData] - Clase "es.deusto.deustoair.server.data.FlightBooking" campo "seats" es una matriz de (non-serializado) elementos de tipo "java.lang.String" pero no tiene ningun <join>. Para almacenar una matriz asi necesita una tabla de juntar, o marcarlo como "serialized".
 23:52:35,377 (main) WARN  [DataNucleus.MetaData] - Clase "es.deusto.deustoair.server.data.FlightBooking" campo "travellers" es una matriz de (non-serializado) elementos de tipo "java.lang.String" pero no tiene ningun <join>. Para almacenar una matriz asi necesita una tabla de juntar, o marcarlo como "serialized".
 23:52:35,717 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+23:52:37,598 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+23:52:38,512 (main) WARN  [DataNucleus.MetaData] - Clase "es.deusto.deustoair.server.data.FlightBooking" campo "seats" es una matriz de (non-serializado) elementos de tipo "java.lang.String" pero no tiene ningun <join>. Para almacenar una matriz asi necesita una tabla de juntar, o marcarlo como "serialized".
+23:52:38,513 (main) WARN  [DataNucleus.MetaData] - Clase "es.deusto.deustoair.server.data.FlightBooking" campo "travellers" es una matriz de (non-serializado) elementos de tipo "java.lang.String" pero no tiene ningun <join>. Para almacenar una matriz asi necesita una tabla de juntar, o marcarlo como "serialized".
+23:52:39,183 (main) WARN  [DataNucleus.Persistence] - El objeto "es.deusto.deustoair.server.data.Airport" (id="es.deusto.deustoair.server.data.Airport:BIO") va a ser detachado (con la opcion DetachAllOnCommit?) pero no es detachable, por eso vamos a hacerlo transient
+23:52:39,183 (main) WARN  [DataNucleus.Persistence] - El objeto "es.deusto.deustoair.server.data.User" (id="es.deusto.deustoair.server.data.User:a@a.com") va a ser detachado (con la opcion DetachAllOnCommit?) pero no es detachable, por eso vamos a hacerlo transient
+23:52:39,296 (main) WARN  [DataNucleus.Persistence] - El objeto "es.deusto.deustoair.server.data.Airport" (id="es.deusto.deustoair.server.data.Airport:MAD") va a ser detachado (con la opcion DetachAllOnCommit?) pero no es detachable, por eso vamos a hacerlo transient
+23:52:39,296 (main) WARN  [DataNucleus.Persistence] - El objeto "es.deusto.deustoair.server.data.User" (id="es.deusto.deustoair.server.data.User:b@b.com") va a ser detachado (con la opcion DetachAllOnCommit?) pero no es detachable, por eso vamos a hacerlo transient
+23:52:39,403 (main) WARN  [DataNucleus.Persistence] - El objeto "es.deusto.deustoair.server.data.User" (id="es.deusto.deustoair.server.data.User:b@b.com") va a ser detachado (con la opcion DetachAllOnCommit?) pero no es detachable, por eso vamos a hacerlo transient
+23:52:39,403 (main) WARN  [DataNucleus.Persistence] - El objeto "es.deusto.deustoair.server.data.User" (id="es.deusto.deustoair.server.data.User:a@a.com") va a ser detachado (con la opcion DetachAllOnCommit?) pero no es detachable, por eso vamos a hacerlo transient
+23:52:39,460 (main) INFO  [DataNucleus.JDO] - Exception thrown
+Variable 'name' is unbound and cannot be determined (is it a misspelled field name? or is not intended to be a variable?)
+org.datanucleus.exceptions.NucleusUserException: Variable 'name' is unbound and cannot be determined (is it a misspelled field name? or is not intended to be a variable?)
+	at org.datanucleus.store.rdbms.query.QueryToSQLMapper.processUnboundExpression(QueryToSQLMapper.java:5075)
+	at org.datanucleus.store.rdbms.query.QueryToSQLMapper.processEqExpression(QueryToSQLMapper.java:2787)
+	at org.datanucleus.query.expression.AbstractExpressionEvaluator.compileRelationalExpression(AbstractExpressionEvaluator.java:80)
+	at org.datanucleus.query.expression.AbstractExpressionEvaluator.compileOrAndExpression(AbstractExpressionEvaluator.java:68)
+	at org.datanucleus.query.expression.AbstractExpressionEvaluator.evaluate(AbstractExpressionEvaluator.java:36)
+	at org.datanucleus.query.expression.Expression.evaluate(Expression.java:338)
+	at org.datanucleus.query.expression.DyadicExpression.evaluate(DyadicExpression.java:75)
+	at org.datanucleus.store.rdbms.query.QueryToSQLMapper.compileFilter(QueryToSQLMapper.java:591)
+	at org.datanucleus.store.rdbms.query.QueryToSQLMapper.compile(QueryToSQLMapper.java:467)
+	at org.datanucleus.store.rdbms.query.JDOQLQuery.compileQueryFull(JDOQLQuery.java:902)
+	at org.datanucleus.store.rdbms.query.JDOQLQuery.compileInternal(JDOQLQuery.java:364)
+	at org.datanucleus.store.query.Query.executeQuery(Query.java:1928)
+	at org.datanucleus.store.query.Query.executeWithArray(Query.java:1856)
+	at org.datanucleus.store.query.Query.execute(Query.java:1838)
+	at org.datanucleus.api.jdo.JDOQuery.executeInternal(JDOQuery.java:439)
+	at org.datanucleus.api.jdo.JDOQuery.execute(JDOQuery.java:263)
+	at es.deustoair.dao.DeustoAirDAO.getUser(Unknown Source)
+	at es.deusto.deustoair.server.DeustoAirServer.main(Unknown Source)
+00:46:53,052 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.11) para el API "JDO" utilisando el JRE "{2}"
+00:46:53,178 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Airport.class" con definicion enhanced
+00:46:53,181 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Flight.class" con definicion enhanced
+00:46:53,184 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\FlightBooking.class" con definicion enhanced
+00:46:53,187 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Payment.class" con definicion enhanced
+00:46:53,189 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Reservation.class" con definicion enhanced
+00:46:53,192 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Route.class" con definicion enhanced
+00:46:53,195 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\User.class" con definicion enhanced
+00:46:53,195 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 7 clases.
+00:46:53,453 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+00:46:53,454 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+00:46:53,454 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-api-jdo-5.1.9.jar
+00:46:53,454 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-cache-5.1.1.jar
+00:46:53,454 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-core-5.1.11.jar
+00:46:53,454 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-rdbms-5.1.11.jar
+00:46:53,454 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\javax.jdo-3.2.0-m8.jar
+00:46:53,454 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\log4j-1.2.14.jar
+00:46:53,454 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\mysql-connector-java-8.0.12.jar
+00:46:53,454 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin
+00:46:53,454 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\resources
+00:46:55,774 (main) ERROR [DataNucleus.Datastore.Schema] - La inicialización del base de datos ha fallado.
+Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+org.datanucleus.exceptions.NucleusDataStoreException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:518)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:290)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:660)
+	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:295)
+	at org.datanucleus.NucleusContextHelper.createStoreManagerForProperties(NucleusContextHelper.java:140)
+	at org.datanucleus.PersistenceNucleusContextImpl.initialise(PersistenceNucleusContextImpl.java:445)
+	at org.datanucleus.store.schema.SchemaTool.getNucleusContextForMode(SchemaTool.java:729)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:300)
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:832)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:208)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:79)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:254)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:864)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:434)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:362)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:132)
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:501)
+	... 11 more
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:152)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:952)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:822)
+	... 23 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:173)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
+	... 26 more
+Nested Throwables StackTrace:
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:832)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:208)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:79)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:254)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:864)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:434)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:362)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:132)
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:501)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:290)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:660)
+	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:295)
+	at org.datanucleus.NucleusContextHelper.createStoreManagerForProperties(NucleusContextHelper.java:140)
+	at org.datanucleus.PersistenceNucleusContextImpl.initialise(PersistenceNucleusContextImpl.java:445)
+	at org.datanucleus.store.schema.SchemaTool.getNucleusContextForMode(SchemaTool.java:729)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:300)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:152)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:952)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:822)
+	... 23 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:173)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
+	... 26 more
+00:46:55,776 (main) ERROR [DataNucleus.Datastore] - Exception thrown creating StoreManager : Connection refused: connect
+00:46:55,776 (main) ERROR [DataNucleus.SchemaTool] - Error creating NucleusContext
+Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+org.datanucleus.exceptions.NucleusDataStoreException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:518)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:290)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:660)
+	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:295)
+	at org.datanucleus.NucleusContextHelper.createStoreManagerForProperties(NucleusContextHelper.java:140)
+	at org.datanucleus.PersistenceNucleusContextImpl.initialise(PersistenceNucleusContextImpl.java:445)
+	at org.datanucleus.store.schema.SchemaTool.getNucleusContextForMode(SchemaTool.java:729)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:300)
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:832)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:208)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:79)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:254)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:864)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:434)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:362)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:132)
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:501)
+	... 11 more
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:152)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:952)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:822)
+	... 23 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:173)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
+	... 26 more
+Nested Throwables StackTrace:
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:832)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:208)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:79)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:254)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:864)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:434)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:362)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:132)
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:501)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:290)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:660)
+	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:295)
+	at org.datanucleus.NucleusContextHelper.createStoreManagerForProperties(NucleusContextHelper.java:140)
+	at org.datanucleus.PersistenceNucleusContextImpl.initialise(PersistenceNucleusContextImpl.java:445)
+	at org.datanucleus.store.schema.SchemaTool.getNucleusContextForMode(SchemaTool.java:729)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:300)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:152)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:952)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:822)
+	... 23 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:173)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
+	... 26 more
+00:47:00,516 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.11) para el API "JDO" utilisando el JRE "{2}"
+00:47:00,639 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Airport.class" con definicion enhanced
+00:47:00,642 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Flight.class" con definicion enhanced
+00:47:00,645 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\FlightBooking.class" con definicion enhanced
+00:47:00,647 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Payment.class" con definicion enhanced
+00:47:00,650 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Reservation.class" con definicion enhanced
+00:47:00,654 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Route.class" con definicion enhanced
+00:47:00,657 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\User.class" con definicion enhanced
+00:47:00,657 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 7 clases.
+00:47:00,912 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+00:47:00,913 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+00:47:00,913 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-api-jdo-5.1.9.jar
+00:47:00,913 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-cache-5.1.1.jar
+00:47:00,913 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-core-5.1.11.jar
+00:47:00,913 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-rdbms-5.1.11.jar
+00:47:00,913 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\javax.jdo-3.2.0-m8.jar
+00:47:00,913 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\log4j-1.2.14.jar
+00:47:00,913 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\mysql-connector-java-8.0.12.jar
+00:47:00,913 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin
+00:47:00,913 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\resources
+00:47:03,212 (main) ERROR [DataNucleus.Datastore.Schema] - La inicialización del base de datos ha fallado.
+Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+org.datanucleus.exceptions.NucleusDataStoreException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:518)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:290)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:660)
+	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:295)
+	at org.datanucleus.NucleusContextHelper.createStoreManagerForProperties(NucleusContextHelper.java:140)
+	at org.datanucleus.PersistenceNucleusContextImpl.initialise(PersistenceNucleusContextImpl.java:445)
+	at org.datanucleus.store.schema.SchemaTool.getNucleusContextForMode(SchemaTool.java:729)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:300)
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:832)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:208)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:79)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:254)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:864)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:434)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:362)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:132)
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:501)
+	... 11 more
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:152)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:952)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:822)
+	... 23 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:173)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
+	... 26 more
+Nested Throwables StackTrace:
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:832)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:208)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:79)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:254)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:864)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:434)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:362)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:132)
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:501)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:290)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:660)
+	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:295)
+	at org.datanucleus.NucleusContextHelper.createStoreManagerForProperties(NucleusContextHelper.java:140)
+	at org.datanucleus.PersistenceNucleusContextImpl.initialise(PersistenceNucleusContextImpl.java:445)
+	at org.datanucleus.store.schema.SchemaTool.getNucleusContextForMode(SchemaTool.java:729)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:300)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:152)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:952)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:822)
+	... 23 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:173)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
+	... 26 more
+00:47:03,217 (main) ERROR [DataNucleus.Datastore] - Exception thrown creating StoreManager : Connection refused: connect
+00:47:03,217 (main) ERROR [DataNucleus.SchemaTool] - Error creating NucleusContext
+Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+org.datanucleus.exceptions.NucleusDataStoreException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:518)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:290)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:660)
+	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:295)
+	at org.datanucleus.NucleusContextHelper.createStoreManagerForProperties(NucleusContextHelper.java:140)
+	at org.datanucleus.PersistenceNucleusContextImpl.initialise(PersistenceNucleusContextImpl.java:445)
+	at org.datanucleus.store.schema.SchemaTool.getNucleusContextForMode(SchemaTool.java:729)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:300)
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:832)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:208)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:79)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:254)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:864)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:434)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:362)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:132)
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:501)
+	... 11 more
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:152)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:952)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:822)
+	... 23 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:173)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
+	... 26 more
+Nested Throwables StackTrace:
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:832)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:208)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:79)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:254)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:864)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:434)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:362)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:132)
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:501)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:290)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:660)
+	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:295)
+	at org.datanucleus.NucleusContextHelper.createStoreManagerForProperties(NucleusContextHelper.java:140)
+	at org.datanucleus.PersistenceNucleusContextImpl.initialise(PersistenceNucleusContextImpl.java:445)
+	at org.datanucleus.store.schema.SchemaTool.getNucleusContextForMode(SchemaTool.java:729)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:300)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:152)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:952)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:822)
+	... 23 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:173)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
+	... 26 more
+00:47:25,253 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.11) para el API "JDO" utilisando el JRE "{2}"
+00:47:25,389 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Airport.class" con definicion enhanced
+00:47:25,392 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Flight.class" con definicion enhanced
+00:47:25,395 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\FlightBooking.class" con definicion enhanced
+00:47:25,397 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Payment.class" con definicion enhanced
+00:47:25,402 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Reservation.class" con definicion enhanced
+00:47:25,406 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Route.class" con definicion enhanced
+00:47:25,409 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\User.class" con definicion enhanced
+00:47:25,409 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 7 clases.
+00:47:25,661 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+00:47:25,662 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+00:47:25,662 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-api-jdo-5.1.9.jar
+00:47:25,662 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-cache-5.1.1.jar
+00:47:25,662 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-core-5.1.11.jar
+00:47:25,662 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-rdbms-5.1.11.jar
+00:47:25,662 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\javax.jdo-3.2.0-m8.jar
+00:47:25,662 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\log4j-1.2.14.jar
+00:47:25,662 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\mysql-connector-java-8.0.12.jar
+00:47:25,662 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin
+00:47:25,662 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\resources
+00:47:26,467 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+00:47:28,133 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+00:47:28,133 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\db\DeustoAirDatabase.class
+00:47:28,134 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\DeustoAirServer.class
+00:47:28,134 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\DeustoAirService.class
+00:47:28,134 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Airport.class
+00:47:28,134 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Flight.class
+00:47:28,134 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\FlightBooking.class
+00:47:28,134 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Payment.class
+00:47:28,134 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Reservation.class
+00:47:28,134 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Route.class
+00:47:28,134 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\User.class
+00:47:28,134 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\AirportDTO.class
+00:47:28,134 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\DataObjectAssembler.class
+00:47:28,134 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\FlightDTO.class
+00:47:28,134 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\PaymentDTO.class
+00:47:28,134 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\ReservationDTO.class
+00:47:28,134 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\UserDTO.class
+00:47:28,134 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\CreditPaymentProcessor.class
+00:47:28,134 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\FacebookLoginHelper.class
+00:47:28,134 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\FlightSearchController.class
+00:47:28,134 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\GoogleLoginHelper.class
+00:47:28,134 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\IAuthGateway.class
+00:47:28,134 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\IPaymentGateway.class
+00:47:28,134 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\LoginGatewayFactory.class
+00:47:28,134 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\PaymentGatewayFactory.class
+00:47:28,134 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\PaypalPaymentProcessor.class
+00:47:28,135 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\remote\DeustoAirServerRemote.class
+00:47:28,135 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\remote\IDeustoAirServerRemote.class
+00:47:28,135 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deustoair\dao\DeustoAirDAO.class
+00:47:28,135 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deustoair\dao\IDeustoAirDAO.class
+00:47:28,215 (main) WARN  [DataNucleus.MetaData] - Clase "es.deusto.deustoair.server.data.FlightBooking" campo "seats" es una matriz de (non-serializado) elementos de tipo "java.lang.String" pero no tiene ningun <join>. Para almacenar una matriz asi necesita una tabla de juntar, o marcarlo como "serialized".
+00:47:28,216 (main) WARN  [DataNucleus.MetaData] - Clase "es.deusto.deustoair.server.data.FlightBooking" campo "travellers" es una matriz de (non-serializado) elementos de tipo "java.lang.String" pero no tiene ningun <join>. Para almacenar una matriz asi necesita una tabla de juntar, o marcarlo como "serialized".
+00:47:28,408 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+00:47:32,211 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.11) para el API "JDO" utilisando el JRE "{2}"
+00:47:32,352 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Airport.class" con definicion enhanced
+00:47:32,355 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Flight.class" con definicion enhanced
+00:47:32,357 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\FlightBooking.class" con definicion enhanced
+00:47:32,360 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Payment.class" con definicion enhanced
+00:47:32,364 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Reservation.class" con definicion enhanced
+00:47:32,367 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Route.class" con definicion enhanced
+00:47:32,370 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\User.class" con definicion enhanced
+00:47:32,370 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 7 clases.
+00:47:32,626 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+00:47:32,627 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+00:47:32,627 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-api-jdo-5.1.9.jar
+00:47:32,627 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-cache-5.1.1.jar
+00:47:32,627 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-core-5.1.11.jar
+00:47:32,627 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-rdbms-5.1.11.jar
+00:47:32,627 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\javax.jdo-3.2.0-m8.jar
+00:47:32,627 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\log4j-1.2.14.jar
+00:47:32,627 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\mysql-connector-java-8.0.12.jar
+00:47:32,627 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin
+00:47:32,627 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\resources
+00:47:33,425 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+00:47:34,656 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+00:47:34,656 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\db\DeustoAirDatabase.class
+00:47:34,656 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\DeustoAirServer.class
+00:47:34,656 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\DeustoAirService.class
+00:47:34,656 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Airport.class
+00:47:34,656 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Flight.class
+00:47:34,656 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\FlightBooking.class
+00:47:34,656 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Payment.class
+00:47:34,657 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Reservation.class
+00:47:34,657 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Route.class
+00:47:34,657 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\User.class
+00:47:34,657 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\AirportDTO.class
+00:47:34,657 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\DataObjectAssembler.class
+00:47:34,657 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\FlightDTO.class
+00:47:34,657 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\PaymentDTO.class
+00:47:34,657 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\ReservationDTO.class
+00:47:34,657 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\UserDTO.class
+00:47:34,657 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\CreditPaymentProcessor.class
+00:47:34,657 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\FacebookLoginHelper.class
+00:47:34,657 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\FlightSearchController.class
+00:47:34,657 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\GoogleLoginHelper.class
+00:47:34,657 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\IAuthGateway.class
+00:47:34,657 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\IPaymentGateway.class
+00:47:34,657 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\LoginGatewayFactory.class
+00:47:34,657 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\PaymentGatewayFactory.class
+00:47:34,657 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\PaypalPaymentProcessor.class
+00:47:34,657 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\remote\DeustoAirServerRemote.class
+00:47:34,657 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\remote\IDeustoAirServerRemote.class
+00:47:34,657 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deustoair\dao\DeustoAirDAO.class
+00:47:34,657 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deustoair\dao\IDeustoAirDAO.class
+00:47:34,745 (main) WARN  [DataNucleus.MetaData] - Clase "es.deusto.deustoair.server.data.FlightBooking" campo "seats" es una matriz de (non-serializado) elementos de tipo "java.lang.String" pero no tiene ningun <join>. Para almacenar una matriz asi necesita una tabla de juntar, o marcarlo como "serialized".
+00:47:34,746 (main) WARN  [DataNucleus.MetaData] - Clase "es.deusto.deustoair.server.data.FlightBooking" campo "travellers" es una matriz de (non-serializado) elementos de tipo "java.lang.String" pero no tiene ningun <join>. Para almacenar una matriz asi necesita una tabla de juntar, o marcarlo como "serialized".
+00:47:34,928 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+00:47:36,908 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+00:47:37,723 (main) WARN  [DataNucleus.MetaData] - Clase "es.deusto.deustoair.server.data.FlightBooking" campo "seats" es una matriz de (non-serializado) elementos de tipo "java.lang.String" pero no tiene ningun <join>. Para almacenar una matriz asi necesita una tabla de juntar, o marcarlo como "serialized".
+00:47:37,723 (main) WARN  [DataNucleus.MetaData] - Clase "es.deusto.deustoair.server.data.FlightBooking" campo "travellers" es una matriz de (non-serializado) elementos de tipo "java.lang.String" pero no tiene ningun <join>. Para almacenar una matriz asi necesita una tabla de juntar, o marcarlo como "serialized".
+00:50:19,655 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.11) para el API "JDO" utilisando el JRE "{2}"
+00:50:19,790 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Airport.class" con definicion enhanced
+00:50:19,793 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Flight.class" con definicion enhanced
+00:50:19,795 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\FlightBooking.class" con definicion enhanced
+00:50:19,798 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Payment.class" con definicion enhanced
+00:50:19,801 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Reservation.class" con definicion enhanced
+00:50:19,804 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Route.class" con definicion enhanced
+00:50:19,807 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\User.class" con definicion enhanced
+00:50:19,807 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 7 clases.
+00:50:20,055 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+00:50:20,055 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+00:50:20,055 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-api-jdo-5.1.9.jar
+00:50:20,055 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-cache-5.1.1.jar
+00:50:20,055 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-core-5.1.11.jar
+00:50:20,055 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-rdbms-5.1.11.jar
+00:50:20,055 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\javax.jdo-3.2.0-m8.jar
+00:50:20,056 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\log4j-1.2.14.jar
+00:50:20,056 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\mysql-connector-java-8.0.12.jar
+00:50:20,056 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin
+00:50:20,056 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\resources
+00:50:20,860 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+00:50:22,875 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+00:50:22,875 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\db\DeustoAirDatabase.class
+00:50:22,875 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\DeustoAirServer.class
+00:50:22,875 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\DeustoAirService.class
+00:50:22,875 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Airport.class
+00:50:22,875 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Flight.class
+00:50:22,875 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\FlightBooking.class
+00:50:22,875 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Payment.class
+00:50:22,876 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Reservation.class
+00:50:22,876 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Route.class
+00:50:22,876 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\User.class
+00:50:22,876 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\AirportDTO.class
+00:50:22,876 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\DataObjectAssembler.class
+00:50:22,876 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\FlightDTO.class
+00:50:22,876 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\PaymentDTO.class
+00:50:22,876 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\ReservationDTO.class
+00:50:22,876 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\UserDTO.class
+00:50:22,876 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\CreditPaymentProcessor.class
+00:50:22,876 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\FacebookLoginHelper.class
+00:50:22,876 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\FlightSearchController.class
+00:50:22,876 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\GoogleLoginHelper.class
+00:50:22,876 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\IAuthGateway.class
+00:50:22,876 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\IPaymentGateway.class
+00:50:22,876 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\LoginGatewayFactory.class
+00:50:22,876 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\PaymentGatewayFactory.class
+00:50:22,876 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\PaypalPaymentProcessor.class
+00:50:22,876 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\remote\DeustoAirServerRemote.class
+00:50:22,876 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\remote\IDeustoAirServerRemote.class
+00:50:22,876 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deustoair\dao\DeustoAirDAO.class
+00:50:22,876 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deustoair\dao\IDeustoAirDAO.class
+00:50:22,958 (main) WARN  [DataNucleus.MetaData] - Clase "es.deusto.deustoair.server.data.FlightBooking" campo "seats" es una matriz de (non-serializado) elementos de tipo "java.lang.String" pero no tiene ningun <join>. Para almacenar una matriz asi necesita una tabla de juntar, o marcarlo como "serialized".
+00:50:22,958 (main) WARN  [DataNucleus.MetaData] - Clase "es.deusto.deustoair.server.data.FlightBooking" campo "travellers" es una matriz de (non-serializado) elementos de tipo "java.lang.String" pero no tiene ningun <join>. Para almacenar una matriz asi necesita una tabla de juntar, o marcarlo como "serialized".
+00:50:23,130 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+00:50:25,057 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+00:50:28,130 (main) WARN  [DataNucleus.MetaData] - Clase "es.deusto.deustoair.server.data.FlightBooking" campo "seats" es una matriz de (non-serializado) elementos de tipo "java.lang.String" pero no tiene ningun <join>. Para almacenar una matriz asi necesita una tabla de juntar, o marcarlo como "serialized".
+00:50:28,130 (main) WARN  [DataNucleus.MetaData] - Clase "es.deusto.deustoair.server.data.FlightBooking" campo "travellers" es una matriz de (non-serializado) elementos de tipo "java.lang.String" pero no tiene ningun <join>. Para almacenar una matriz asi necesita una tabla de juntar, o marcarlo como "serialized".
+00:50:38,651 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.11) para el API "JDO" utilisando el JRE "{2}"
+00:50:38,802 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Airport.class" con definicion enhanced
+00:50:38,805 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Flight.class" con definicion enhanced
+00:50:38,809 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\FlightBooking.class" con definicion enhanced
+00:50:38,814 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Payment.class" con definicion enhanced
+00:50:38,819 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Reservation.class" con definicion enhanced
+00:50:38,824 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Route.class" con definicion enhanced
+00:50:38,828 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\User.class" con definicion enhanced
+00:50:38,828 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 7 clases.
+00:50:39,095 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+00:50:39,096 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+00:50:39,096 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-api-jdo-5.1.9.jar
+00:50:39,096 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-cache-5.1.1.jar
+00:50:39,096 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-core-5.1.11.jar
+00:50:39,096 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-rdbms-5.1.11.jar
+00:50:39,096 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\javax.jdo-3.2.0-m8.jar
+00:50:39,096 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\log4j-1.2.14.jar
+00:50:39,096 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\mysql-connector-java-8.0.12.jar
+00:50:39,096 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin
+00:50:39,096 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\resources
+00:50:39,896 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+00:50:41,628 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+00:50:41,628 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\db\DeustoAirDatabase.class
+00:50:41,628 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\DeustoAirServer.class
+00:50:41,628 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\DeustoAirService.class
+00:50:41,628 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Airport.class
+00:50:41,629 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Flight.class
+00:50:41,629 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\FlightBooking.class
+00:50:41,629 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Payment.class
+00:50:41,629 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Reservation.class
+00:50:41,629 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Route.class
+00:50:41,629 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\User.class
+00:50:41,629 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\AirportDTO.class
+00:50:41,629 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\DataObjectAssembler.class
+00:50:41,629 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\FlightDTO.class
+00:50:41,629 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\PaymentDTO.class
+00:50:41,629 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\ReservationDTO.class
+00:50:41,629 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\UserDTO.class
+00:50:41,629 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\CreditPaymentProcessor.class
+00:50:41,629 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\FacebookLoginHelper.class
+00:50:41,629 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\FlightSearchController.class
+00:50:41,629 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\GoogleLoginHelper.class
+00:50:41,629 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\IAuthGateway.class
+00:50:41,629 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\IPaymentGateway.class
+00:50:41,629 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\LoginGatewayFactory.class
+00:50:41,629 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\PaymentGatewayFactory.class
+00:50:41,629 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\PaypalPaymentProcessor.class
+00:50:41,629 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\remote\DeustoAirServerRemote.class
+00:50:41,629 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\remote\IDeustoAirServerRemote.class
+00:50:41,629 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deustoair\dao\DeustoAirDAO.class
+00:50:41,630 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deustoair\dao\IDeustoAirDAO.class
+00:50:41,716 (main) WARN  [DataNucleus.MetaData] - Clase "es.deusto.deustoair.server.data.FlightBooking" campo "seats" es una matriz de (non-serializado) elementos de tipo "java.lang.String" pero no tiene ningun <join>. Para almacenar una matriz asi necesita una tabla de juntar, o marcarlo como "serialized".
+00:50:41,716 (main) WARN  [DataNucleus.MetaData] - Clase "es.deusto.deustoair.server.data.FlightBooking" campo "travellers" es una matriz de (non-serializado) elementos de tipo "java.lang.String" pero no tiene ningun <join>. Para almacenar una matriz asi necesita una tabla de juntar, o marcarlo como "serialized".
+00:50:41,896 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+00:50:57,542 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.11) para el API "JDO" utilisando el JRE "{2}"
+00:50:57,667 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Airport.class" con definicion enhanced
+00:50:57,670 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Flight.class" con definicion enhanced
+00:50:57,673 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\FlightBooking.class" con definicion enhanced
+00:50:57,675 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Payment.class" con definicion enhanced
+00:50:57,679 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Reservation.class" con definicion enhanced
+00:50:57,682 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Route.class" con definicion enhanced
+00:50:57,684 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\User.class" con definicion enhanced
+00:50:57,685 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 7 clases.
+00:50:57,928 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+00:50:57,928 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+00:50:57,928 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-api-jdo-5.1.9.jar
+00:50:57,928 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-cache-5.1.1.jar
+00:50:57,928 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-core-5.1.11.jar
+00:50:57,928 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\datanucleus-rdbms-5.1.11.jar
+00:50:57,928 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\javax.jdo-3.2.0-m8.jar
+00:50:57,929 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\log4j-1.2.14.jar
+00:50:57,929 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\lib\mysql-connector-java-8.0.12.jar
+00:50:57,929 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin
+00:50:57,929 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\resources
+00:50:58,725 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+00:51:01,790 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+00:51:01,790 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\db\DeustoAirDatabase.class
+00:51:01,790 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\DeustoAirServer.class
+00:51:01,790 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\DeustoAirService.class
+00:51:01,790 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Airport.class
+00:51:01,790 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Flight.class
+00:51:01,790 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\FlightBooking.class
+00:51:01,790 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Payment.class
+00:51:01,790 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Reservation.class
+00:51:01,790 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\Route.class
+00:51:01,790 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\User.class
+00:51:01,790 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\AirportDTO.class
+00:51:01,790 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\DataObjectAssembler.class
+00:51:01,790 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\FlightDTO.class
+00:51:01,790 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\PaymentDTO.class
+00:51:01,790 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\ReservationDTO.class
+00:51:01,791 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\data\dto\UserDTO.class
+00:51:01,791 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\CreditPaymentProcessor.class
+00:51:01,791 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\FacebookLoginHelper.class
+00:51:01,791 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\FlightSearchController.class
+00:51:01,791 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\GoogleLoginHelper.class
+00:51:01,791 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\IAuthGateway.class
+00:51:01,791 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\IPaymentGateway.class
+00:51:01,791 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\LoginGatewayFactory.class
+00:51:01,791 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\PaymentGatewayFactory.class
+00:51:01,791 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\gateway\PaypalPaymentProcessor.class
+00:51:01,791 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\remote\DeustoAirServerRemote.class
+00:51:01,791 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deusto\deustoair\server\remote\IDeustoAirServerRemote.class
+00:51:01,791 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deustoair\dao\DeustoAirDAO.class
+00:51:01,791 (main) INFO  [DataNucleus.SchemaTool] - >>  F:\Documentos\Deusto\SoftDesign\eclipse-workspace\SoftDesign_E3\SD3_DeustoAir_Server\bin\es\deustoair\dao\IDeustoAirDAO.class
+00:51:01,872 (main) WARN  [DataNucleus.MetaData] - Clase "es.deusto.deustoair.server.data.FlightBooking" campo "seats" es una matriz de (non-serializado) elementos de tipo "java.lang.String" pero no tiene ningun <join>. Para almacenar una matriz asi necesita una tabla de juntar, o marcarlo como "serialized".
+00:51:01,872 (main) WARN  [DataNucleus.MetaData] - Clase "es.deusto.deustoair.server.data.FlightBooking" campo "travellers" es una matriz de (non-serializado) elementos de tipo "java.lang.String" pero no tiene ningun <join>. Para almacenar una matriz asi necesita una tabla de juntar, o marcarlo como "serialized".
+00:51:02,048 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito

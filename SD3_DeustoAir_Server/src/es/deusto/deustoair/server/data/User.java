@@ -29,6 +29,8 @@ public class User {
 		super();
 		this.id = id;
 		this.email = email;
+		this.reservations = new ArrayList<Reservation>();
+		this.payments = new ArrayList<Payments>();
 		this.preferredPaymentMethod = preferredPaymentMethod;
 		this.defaultAirport = defaultAirport;
 	}

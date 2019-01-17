@@ -55,10 +55,10 @@ public class DeustoAirServer {
 			System.out.println("* Creating 4 Reservations...");
 			
 			FlightBooking[] bookedFlights = null;
-			Reservation r1 = new Reservation(0, new Date(02/12/19), 21, bookedFlights, usr, 100);
-			Reservation r2 = new Reservation(0, new Date(15/7/19), 12, bookedFlights, usr1, 52);
-			Reservation r3 = new Reservation(0, new Date(21/1/19), 52, bookedFlights, usr2, 65);
-			Reservation r4 = new Reservation(0, new Date(10/2/19), 10, bookedFlights, usr2, 210);
+			Reservation r1 = new Reservation(0, new Date(System.currentTimeMillis()), 21, bookedFlights, usr, 100);
+			Reservation r2 = new Reservation(1, new Date(System.currentTimeMillis()), 12, bookedFlights, usr1, 52);
+			Reservation r3 = new Reservation(2, new Date(System.currentTimeMillis()), 52, bookedFlights, usr2, 65);
+			Reservation r4 = new Reservation(3, new Date(System.currentTimeMillis()), 10, bookedFlights, usr2, 210);
 			
 			System.out.println("* Adding to users...");
 			
