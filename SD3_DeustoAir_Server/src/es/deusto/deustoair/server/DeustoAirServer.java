@@ -55,7 +55,7 @@ public class DeustoAirServer {
 			
 			System.out.println("* Creating 4 Reservations...");
 			
-			
+			System.out.println("     -Creating Airports...");
 			Airport origin1 = new Airport("STD");
 			Airport destination1 = new Airport("RUS");
 			Airport origin2 = new Airport("GZ");
@@ -64,27 +64,27 @@ public class DeustoAirServer {
 			Airport destination3 = new Airport("QES");
 			Airport origin4 = new Airport("BSD");
 			Airport destination4 = new Airport("TSA");
-			
+			System.out.println("     -Creating Flights...");
 			Flight a = new Flight(new Route("123", 1, 60, 350, origin1, destination1), new Date(System.currentTimeMillis()), 50);
 			Flight b = new Flight(new Route("653", 2, 54, 350, origin2, destination2), new Date(System.currentTimeMillis()), 75);
 			Flight c = new Flight(new Route("234", 3, 23, 350, origin3, destination3), new Date(System.currentTimeMillis()), 32);
 			Flight d = new Flight(new Route("153", 4, 42, 350, origin4, destination4), new Date(System.currentTimeMillis()), 52);
-			
+			System.out.println("     -Creating FlightBooking...");
 			FlightBooking a1 = new FlightBooking(a, new String[] {"23","24","25"}, new String[] {"Iñigo","Pedro","Luis"});
 			FlightBooking a2 = new FlightBooking(b, new String[] {"1","2","3"}, new String[] {"Sara","Jon","Koala"});
 			FlightBooking a3 = new FlightBooking(c, new String[] {"67","68","69"}, new String[] {"Juan","Ozuna","Ñengo"});
 			FlightBooking a4 = new FlightBooking(d, new String[] {"13","14","15"}, new String[] {"Anuel","Omar","Montes"});
-			
+			System.out.println("     -Creating FlighBookingArray...");
 			FlightBooking[] bookedFlights1 = null;
 			FlightBooking[] bookedFlights2 = null;
 			FlightBooking[] bookedFlights3 = null;
 			FlightBooking[] bookedFlights4 = null;
-			
+			System.out.println("     -Setting FlighbookingArray...");
 			bookedFlights1[0]=a1;
 			bookedFlights2[0]=a2;
 			bookedFlights3[0]=a3;
 			bookedFlights4[0]=a4;
-			
+			System.out.println("     -Creating...");
 			
 			Reservation r1 = new Reservation(0, new Date(System.currentTimeMillis()), 21, bookedFlights1, usr, 100);
 			Reservation r2 = new Reservation(1, new Date(System.currentTimeMillis()), 12, bookedFlights2, usr1, 52);
