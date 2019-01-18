@@ -50,9 +50,9 @@ public class DeustoAirServer {
 			
 			System.out.println("* Creating 3 Users...");
 			
-			User usr = new User(0, "pedro@deusto.es", "paypal", new Airport("BIO"));
-			User usr1 = new User(1, "luis@deusto.es", "credit", new Airport("MAD"));
-			User usr2 = new User(2, "juan@deusto.es", "credit", new Airport("STS"));
+			User usr = new User(0, "pedro@deusto.es", "paypal", new Airport("AAA"));
+			User usr1 = new User(1, "luis@deusto.es", "credit", new Airport("BBB"));
+			User usr2 = new User(2, "juan@deusto.es", "credit", new Airport("CCC"));
 			
 			System.out.println("* Creating 4 Reservations...");
 			
@@ -102,17 +102,17 @@ public class DeustoAirServer {
 			dstdao.storeReservation(usr2);
 			
 			System.out.println("* Getting all the users from the DB..");
-			List<User> usrs = null;
-			usrs = dstdao.getUsers();
-			System.out.println("");
-			System.out.println(" * List of Clients and Reservations");
-			for (User user : usrs) {
-				System.out.println("Client ID: "+user.getId()+" Client email: "+user.getEmail()+" Client Airport: "+user.getDefaultAirport()+" Client PayMethod: "+user.getPreferredPaymentMethod());
-				System.out.println("Reservations");
-				for (Reservation rvs : user.getReservations()) {
-					System.out.println("ID:"+rvs.getId()+" Price:"+rvs.getPrice()+" UserEmail: "+rvs.getBookedBy().getEmail());
-				}
+			List<User> usrs = dstdao.getUsers();
+			System.out.println(" * List of Clients");
+			
+			
+			
+			
+			
+			for (int i = usrs.size()-1; i >= 0; i--) {
+				System.out.println("Client ID: "+usrs.get(i).getId()+" Client email: "+usrs.get(i).getEmail()+" Client PayMethod: "+usrs.get(i).getPreferredPaymentMethod());
 			}
+			
 			
 			/*
 			System.out.println("* Main DeustoAir Server now running on: '" + serverName);

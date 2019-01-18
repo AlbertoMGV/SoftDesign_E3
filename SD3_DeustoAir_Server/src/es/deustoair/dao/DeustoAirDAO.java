@@ -97,7 +97,7 @@ public class DeustoAirDAO implements IDeustoAirDAO{
 	       System.out.println("   * Storing an User: " + user.getEmail());
 	       
 	       pm.makePersistent(user);
-	       System.out.println("D1");
+	       
 	       tx.commit();
 	    } catch (Exception ex) {
 	    	System.out.println("   $ Error storing the user: " + ex.getMessage());
