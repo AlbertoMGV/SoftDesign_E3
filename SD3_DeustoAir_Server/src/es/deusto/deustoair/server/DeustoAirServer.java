@@ -25,6 +25,7 @@ import es.deustoair.dao.IDeustoAirDAO;
 public class DeustoAirServer {
 	
 
+	@SuppressWarnings("null")
 	public static void main(String[] args) {
 
 		if (System.getSecurityManager() == null) {
@@ -75,15 +76,11 @@ public class DeustoAirServer {
 			FlightBooking a3 = new FlightBooking(c, new String[] {"67","68","69"}, new String[] {"Juan","Ozuna","Ñengo"});
 			FlightBooking a4 = new FlightBooking(d, new String[] {"13","14","15"}, new String[] {"Anuel","Omar","Montes"});
 			System.out.println("     -Creating FlighBookingArray...");
-			FlightBooking[] bookedFlights1 = null;
-			FlightBooking[] bookedFlights2 = null;
-			FlightBooking[] bookedFlights3 = null;
-			FlightBooking[] bookedFlights4 = null;
-			System.out.println("     -Setting FlighbookingArray...");
-			bookedFlights1[0]=a1;
-			bookedFlights2[0]=a2;
-			bookedFlights3[0]=a3;
-			bookedFlights4[0]=a4;
+			FlightBooking[] bookedFlights1 = {a1};
+			FlightBooking[] bookedFlights2 = {a2};
+			FlightBooking[] bookedFlights3 = {a3};
+			FlightBooking[] bookedFlights4 = {a4};
+			
 			System.out.println("     -Creating...");
 			
 			Reservation r1 = new Reservation(0, new Date(System.currentTimeMillis()), 21, bookedFlights1, usr, 100);
